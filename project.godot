@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="FirstGame"
-run/main_scene="res://main.tscn"
+run/main_scene="res://scene1.tscn"
 config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
-config/icon="res://Images/icon.svg"
+config/icon="res://resources/Images/icon.svg"
+
+[autoload]
+
+Game="*res://Global/game.cs"
+Utils="*res://Global/utils.cs"
 
 [dotnet]
 
