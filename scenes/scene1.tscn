@@ -1,13 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpuo7xlxj8duk"]
+[gd_scene load_steps=6 format=3 uid="uid://di863o0vhxw2a"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_8fs8i"]
-[ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_8pswn"]
-[ext_resource type="FontFile" uid="uid://hy2kgo6bcwbf" path="res://resources/Fonts/Oxanium/Oxanium-VariableFont_wght.ttf" id="3_ydcxl"]
-[ext_resource type="Texture2D" uid="uid://dxb8er60ckcwi" path="res://resources/Images/bg_trans.png" id="4_sfn1p"]
-[ext_resource type="Texture2D" uid="uid://dbcb68j3ybv83" path="res://resources/Images/Graphics/IdleBtn_sml_light.png" id="5_2kpdq"]
+[ext_resource type="Script" path="res://scripts/scene1.gd" id="1_hhw1i"]
+[ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_ytybx"]
+[ext_resource type="Texture2D" uid="uid://dxb8er60ckcwi" path="res://resources/Images/bg_trans.png" id="3_ew2vw"]
+[ext_resource type="Texture2D" uid="uid://dbcb68j3ybv83" path="res://resources/Images/Graphics/IdleBtn_sml_light.png" id="4_bctc0"]
+[ext_resource type="FontFile" uid="uid://hy2kgo6bcwbf" path="res://resources/Fonts/Oxanium/Oxanium-VariableFont_wght.ttf" id="5_pmo8n"]
 
-[node name="Scene2" type="Node2D"]
-script = ExtResource("1_8fs8i")
+[node name="scene1" type="Node2D"]
+script = ExtResource("1_hhw1i")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -27,7 +27,7 @@ offset_left = -8.0
 offset_top = -8.0
 offset_right = 1152.0
 offset_bottom = 649.0
-texture = ExtResource("2_8pswn")
+texture = ExtResource("2_ytybx")
 expand_mode = 2
 metadata/_edit_use_anchors_ = true
 
@@ -44,7 +44,7 @@ layout_mode = 0
 offset_left = -1.0
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("4_sfn1p")
+texture = ExtResource("3_ew2vw")
 expand_mode = 1
 
 [node name="Continue" type="Button" parent="Control"]
@@ -55,7 +55,7 @@ offset_right = 1078.0
 offset_bottom = 605.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Continue"
-icon = ExtResource("5_2kpdq")
+icon = ExtResource("4_bctc0")
 flat = true
 icon_alignment = 1
 
@@ -65,9 +65,9 @@ offset_left = 288.0
 offset_top = 32.0
 offset_right = 864.0
 offset_bottom = 144.0
-theme_override_fonts/font = ExtResource("3_ydcxl")
+theme_override_fonts/font = ExtResource("5_pmo8n")
 theme_override_font_sizes/font_size = 23
-text = "Please select social media platforms that you use"
+text = "Explain the reason for the game here"
 horizontal_alignment = 1
 autowrap_mode = 2
 
