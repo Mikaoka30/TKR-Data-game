@@ -1,12 +1,23 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpuo7xlxj8duk"]
+[gd_scene load_steps=14 format=3 uid="uid://dpuo7xlxj8duk"]
 
 [ext_resource type="Script" path="res://scripts/scene1.gd" id="1_82aco"]
 [ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_pf8du"]
 [ext_resource type="Texture2D" uid="uid://dxb8er60ckcwi" path="res://resources/Images/bg_trans.png" id="3_v4y8g"]
 [ext_resource type="Texture2D" uid="uid://dbcb68j3ybv83" path="res://resources/Images/Graphics/IdleBtn_sml_light.png" id="4_y8hw4"]
 [ext_resource type="FontFile" uid="uid://hy2kgo6bcwbf" path="res://resources/Fonts/Oxanium/Oxanium-VariableFont_wght.ttf" id="5_x36s3"]
+[ext_resource type="Texture2D" uid="uid://dfhhbedbifxoj" path="res://resources/Images/logos/instragram-logo.png" id="6_2csap"]
+[ext_resource type="Script" path="res://scripts/instagram.gd" id="7_xpixy"]
+[ext_resource type="Texture2D" uid="uid://dt10brrnkmljv" path="res://resources/Images/logos/facebook-logo.png" id="8_xkltv"]
+[ext_resource type="Script" path="res://scripts/facebook.gd" id="9_txsc4"]
+[ext_resource type="Texture2D" uid="uid://vnq6p8hicdrq" path="res://resources/Images/logos/snapchat-logo.png" id="10_e1om6"]
+[ext_resource type="Texture2D" uid="uid://dgq03itkvj2xr" path="res://resources/Images/logos/google-logo.png" id="10_rdpe5"]
+[ext_resource type="Texture2D" uid="uid://wg26soqpq4un" path="res://resources/Images/logos/tiktok-logo.png" id="12_pr71f"]
 
-[node name="scene3" type="Node2D"]
+[sub_resource type="GDScript" id="GDScript_q8fni"]
+script/source = "extends \"res://scripts/icon.gd\"
+"
+
+[node name="Scene3" type="Node2D"]
 script = ExtResource("1_82aco")
 
 [node name="Control" type="Control" parent="."]
@@ -70,6 +81,56 @@ theme_override_font_sizes/font_size = 23
 text = "Please select social media platforms that you use"
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="Instagram" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 224.0
+offset_right = 622.0
+offset_bottom = 302.0
+texture = ExtResource("6_2csap")
+expand_mode = 5
+script = ExtResource("7_xpixy")
+
+[node name="Facebook" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 680.0
+offset_top = 312.0
+offset_right = 823.0
+offset_bottom = 392.0
+texture = ExtResource("8_xkltv")
+expand_mode = 3
+script = ExtResource("9_txsc4")
+
+[node name="Google" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 224.0
+offset_right = 976.0
+offset_bottom = 312.0
+texture = ExtResource("10_rdpe5")
+expand_mode = 3
+script = ExtResource("9_txsc4")
+
+[node name="Snapchat" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 216.0
+offset_right = 328.0
+offset_bottom = 322.0
+texture = ExtResource("10_e1om6")
+expand_mode = 1
+script = SubResource("GDScript_q8fni")
+
+[node name="TikTok" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 312.0
+offset_right = 488.0
+offset_bottom = 416.0
+texture = ExtResource("12_pr71f")
+expand_mode = 1
+script = SubResource("GDScript_q8fni")
 
 [connection signal="focus_exited" from="Control" to="." method="_on_control_focus_exited"]
 [connection signal="pressed" from="Control/Continue" to="." method="_on_continue_pressed"]

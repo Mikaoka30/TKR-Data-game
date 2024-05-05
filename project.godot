@@ -17,8 +17,7 @@ config/icon="res://resources/Images/icon.svg"
 
 [autoload]
 
-Game="*res://Global/game.cs"
-Utils="*res://Global/utils.cs"
+SocialMediaVars="*res://global/social_media_vars.gd"
 
 [dotnet]
 
