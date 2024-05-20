@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cp46jvjfsqacf"]
+[gd_scene load_steps=15 format=3 uid="uid://cndlgn5spha3h"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_uypv3"]
@@ -224,6 +224,7 @@ offset_bottom = 302.0
 texture = ExtResource("7_fdf1h")
 expand_mode = 5
 script = SubResource("GDScript_x82la")
+metadata/Instagram = "Instagram"
 
 [node name="Facebook" type="TextureRect" parent="Control3"]
 layout_mode = 0
@@ -234,6 +235,7 @@ offset_bottom = 392.0
 texture = ExtResource("9_y32jk")
 expand_mode = 3
 script = SubResource("GDScript_u50a5")
+metadata/Facebook = "Facebook"
 
 [node name="Google" type="TextureRect" parent="Control3"]
 layout_mode = 0
@@ -244,6 +246,7 @@ offset_bottom = 312.0
 texture = ExtResource("11_1c24d")
 expand_mode = 3
 script = SubResource("GDScript_u50a5")
+metadata/Google = "Google"
 
 [node name="Snapchat" type="TextureRect" parent="Control3"]
 layout_mode = 0
@@ -254,6 +257,7 @@ offset_bottom = 322.0
 texture = ExtResource("12_ybm6k")
 expand_mode = 1
 script = SubResource("GDScript_ynv8d")
+metadata/Snapchat = "Snapchat"
 
 [node name="TikTok" type="TextureRect" parent="Control3"]
 layout_mode = 0
@@ -264,6 +268,7 @@ offset_bottom = 416.0
 texture = ExtResource("13_br4cw")
 expand_mode = 1
 script = SubResource("GDScript_ynv8d")
+metadata/TikTok = "TikTok"
 
 [node name="Control4" type="Control" parent="."]
 visible = false

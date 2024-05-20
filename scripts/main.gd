@@ -12,8 +12,6 @@ func _on_continue_3_pressed():
 	get_node("Control3").visible = false
 	get_node("Control4").visible = true
 
-
 func _on_continue_4_pressed():
 	get_node("Control4").visible = false
 	get_node("Control5").visible = true
-
