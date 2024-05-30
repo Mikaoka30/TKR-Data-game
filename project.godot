@@ -19,6 +19,10 @@ config/icon="res://resources/Images/icon.svg"
 
 SocialMediaVars="*res://global/social_media_vars.gd"
 
+[display]
+
+window/size/always_on_top=true
+
 [dotnet]
 
 project/assembly_name="FirstGame"

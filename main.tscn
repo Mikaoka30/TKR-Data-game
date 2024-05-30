@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cndlgn5spha3h"]
+[gd_scene load_steps=17 format=3 uid="uid://cndlgn5spha3h"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_uypv3"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dfhhbedbifxoj" path="res://resources/Images/logos/instragram-logo.png" id="7_fdf1h"]
 [ext_resource type="Texture2D" uid="uid://dt10brrnkmljv" path="res://resources/Images/logos/facebook-logo.png" id="9_y32jk"]
 [ext_resource type="Texture2D" uid="uid://dgq03itkvj2xr" path="res://resources/Images/logos/google-logo.png" id="11_1c24d"]
+[ext_resource type="Script" path="res://scripts/scene4.gd" id="12_efsti"]
 [ext_resource type="Texture2D" uid="uid://vnq6p8hicdrq" path="res://resources/Images/logos/snapchat-logo.png" id="12_ybm6k"]
 [ext_resource type="Texture2D" uid="uid://wg26soqpq4un" path="res://resources/Images/logos/tiktok-logo.png" id="13_br4cw"]
 
@@ -24,10 +25,13 @@ script/source = "extends \"res://scripts/icon.gd\"
 script/source = "extends \"res://scripts/icon.gd\"
 "
 
+[sub_resource type="Theme" id="Theme_hou4k"]
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_8u0md")
 
 [node name="Control1" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -271,7 +275,6 @@ script = SubResource("GDScript_ynv8d")
 metadata/TikTok = "TikTok"
 
 [node name="Control4" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -280,7 +283,13 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
+size_flags_horizontal = 4
+script = ExtResource("12_efsti")
+
+[node name="SocialMediaVbox" type="VBoxContainer" parent="Control4"]
+offset_right = 666.0
+offset_bottom = 583.0
+size_flags_horizontal = 8
 
 [node name="TextureRect" type="TextureRect" parent="Control4"]
 modulate = Color(1, 1, 1, 0.403922)
@@ -303,9 +312,10 @@ offset_bottom = 632.0
 [node name="TextureRect2" type="TextureRect" parent="Control4"]
 modulate = Color(1, 1, 1, 0.231373)
 layout_mode = 0
-offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_left = -19.0
+offset_top = -4.0
+offset_right = 1134.0
+offset_bottom = 644.0
 texture = ExtResource("3_hkr3r")
 expand_mode = 1
 
@@ -321,17 +331,55 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
-[node name="Label" type="Label" parent="Control4"]
-layout_mode = 1
-offset_left = 288.0
-offset_top = 32.0
-offset_right = 864.0
-offset_bottom = 144.0
-theme_override_fonts/font = ExtResource("5_2lysm")
-theme_override_font_sizes/font_size = 23
-text = "Please select social media platforms that you use"
-horizontal_alignment = 1
-autowrap_mode = 2
+[node name="GridContainer" type="GridContainer" parent="Control4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control4"]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 3.0
+offset_right = 389.0
+offset_bottom = 53.0
+scale = Vector2(4.99004, 4.71021)
+theme = SubResource("Theme_hou4k")
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Control4/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.15
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/HBoxContainer/VBoxContainer4"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("12_ybm6k")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control4/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.15
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("12_ybm6k")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="Control4/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.15
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/HBoxContainer/VBoxContainer5"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("12_ybm6k")
+expand_mode = 5
+stretch_mode = 5
 
 [node name="Control5" type="Control" parent="."]
 visible = false
@@ -462,4 +510,5 @@ autowrap_mode = 2
 [connection signal="pressed" from="Control1/Continue1" to="." method="_on_continue_1_pressed"]
 [connection signal="pressed" from="Control2/Continue2" to="." method="_on_continue_2_pressed"]
 [connection signal="pressed" from="Control3/Continue3" to="." method="_on_continue_3_pressed"]
+[connection signal="visibility_changed" from="Control4" to="Control4" method="_on_visibility_changed"]
 [connection signal="pressed" from="Control4/Continue4" to="." method="_on_continue_4_pressed"]
