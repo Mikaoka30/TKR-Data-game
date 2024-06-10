@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=24 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_uypv3"]
@@ -13,6 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://vnq6p8hicdrq" path="res://resources/Images/logos/snapchat-logo.png" id="12_ybm6k"]
 [ext_resource type="Script" path="res://scripts/Control5.gd" id="13_08a5y"]
 [ext_resource type="Texture2D" uid="uid://wg26soqpq4un" path="res://resources/Images/logos/tiktok-logo.png" id="13_br4cw"]
+[ext_resource type="Texture2D" uid="uid://c67d02rorygca" path="res://resources/Background/20240411_102651550_iOS.png" id="14_t0n8m"]
+[ext_resource type="Texture2D" uid="uid://dgk2lwhbxt8lx" path="res://resources/Images/GoogleLine.png" id="15_grknh"]
+[ext_resource type="Texture2D" uid="uid://6xg80iium3lo" path="res://resources/Images/InstagramLine.png" id="16_6kg3c"]
+[ext_resource type="Texture2D" uid="uid://bfc4d04xqqdo5" path="res://resources/Images/FB.png" id="17_e7wty"]
+[ext_resource type="Texture2D" uid="uid://bxngvk2st68g4" path="res://resources/Images/SnapchatLine.png" id="18_rtbc7"]
+[ext_resource type="Texture2D" uid="uid://bp6jqd75dcv44" path="res://resources/Images/TikTokLine.png" id="19_iya7m"]
 
 [sub_resource type="GDScript" id="GDScript_x82la"]
 script/source = "extends \"res://scripts/icon.gd\"
@@ -441,6 +447,76 @@ theme_override_font_sizes/font_size = 23
 text = "This is the 5th scene"
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="Control5"]
+layout_mode = 0
+offset_left = -91.0
+offset_top = 85.0
+offset_right = 1252.0
+offset_bottom = 532.0
+texture = ExtResource("14_t0n8m")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="GLine" type="TextureRect" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -91.0
+offset_top = 85.0
+offset_right = 1252.0
+offset_bottom = 532.0
+texture = ExtResource("15_grknh")
+expand_mode = 1
+stretch_mode = 4
+metadata/Name = &"GLine"
+
+[node name="FLine" type="TextureRect" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -91.0
+offset_top = 85.0
+offset_right = 1252.0
+offset_bottom = 532.0
+texture = ExtResource("17_e7wty")
+expand_mode = 1
+stretch_mode = 4
+metadata/Name = &"FLine"
+
+[node name="ILine" type="TextureRect" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -91.0
+offset_top = 85.0
+offset_right = 1252.0
+offset_bottom = 532.0
+texture = ExtResource("16_6kg3c")
+expand_mode = 1
+stretch_mode = 4
+metadata/Name = &"ILine"
+
+[node name="SLine" type="TextureRect" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -91.0
+offset_top = 85.0
+offset_right = 1252.0
+offset_bottom = 532.0
+texture = ExtResource("18_rtbc7")
+expand_mode = 1
+stretch_mode = 4
+metadata/Name = &"SLine"
+
+[node name="TLine" type="TextureRect" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -91.0
+offset_top = 85.0
+offset_right = 1252.0
+offset_bottom = 532.0
+texture = ExtResource("19_iya7m")
+expand_mode = 1
+stretch_mode = 4
+metadata/Name = &"TLine"
 
 [node name="Control6" type="Control" parent="."]
 visible = false
