@@ -2,6 +2,7 @@ extends Node
 
 # Define the global array of textures
 var social_array = []
+var is_dragging = false
 
 func add_texture(texture_to_add):
 	social_array.append(texture_to_add)

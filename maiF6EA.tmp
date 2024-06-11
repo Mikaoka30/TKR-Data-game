@@ -295,14 +295,12 @@ color = Color(0.847059, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Node2D" type="Node2D" parent="Control4"]
-position = Vector2(1, 1)
 script = ExtResource("12_a40x0")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control4/Node2D"]
 texture = ExtResource("13_br4cw")
 
 [node name="Area2D" type="Area2D" parent="Control4/Node2D"]
-position = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Control4/Node2D/Area2D"]
 shape = SubResource("RectangleShape2D_du25p")

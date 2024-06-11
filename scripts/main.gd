@@ -5,8 +5,8 @@ func _on_continue_1_pressed():
 	get_node("Control2").visible = true
 
 func _on_continue_2_pressed():
-		get_node("Control2").visible = false
-		get_node("Control3").visible = true
+	get_node("Control2").visible = false
+	get_node("Control3").visible = true
 
 func _on_continue_3_pressed():
 	get_node("Control3").visible = false
