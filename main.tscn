@@ -1,12 +1,13 @@
-[gd_scene load_steps=24 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=25 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_uypv3"]
 [ext_resource type="Texture2D" uid="uid://dxb8er60ckcwi" path="res://resources/Images/bg_trans.png" id="3_hkr3r"]
 [ext_resource type="Texture2D" uid="uid://dbcb68j3ybv83" path="res://resources/Images/Graphics/IdleBtn_sml_light.png" id="4_wlj0b"]
 [ext_resource type="FontFile" uid="uid://hy2kgo6bcwbf" path="res://resources/Fonts/Oxanium/Oxanium-VariableFont_wght.ttf" id="5_2lysm"]
-[ext_resource type="Texture2D" uid="uid://c33raolbtcx41" path="res://resources/Background/TKR_Image Library-68(3).jpg" id="6_5nsg1"]
+[ext_resource type="Texture2D" uid="uid://cjrfcf3cexonl" path="res://resources/Images/Graphics/cardSml_hover.png" id="7_agtkc"]
 [ext_resource type="Texture2D" uid="uid://dfhhbedbifxoj" path="res://resources/Images/logos/instragram-logo.png" id="7_fdf1h"]
+[ext_resource type="FontFile" uid="uid://0j081jwln1lw" path="res://resources/Fonts/Bebas_Neue/BebasNeue-Regular.ttf" id="8_2d3kv"]
 [ext_resource type="Texture2D" uid="uid://dt10brrnkmljv" path="res://resources/Images/logos/facebook-logo.png" id="9_y32jk"]
 [ext_resource type="Texture2D" uid="uid://dgq03itkvj2xr" path="res://resources/Images/logos/google-logo.png" id="11_1c24d"]
 [ext_resource type="Script" path="res://scripts/scene4.gd" id="12_efsti"]
@@ -48,16 +49,26 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="Control1"]
-modulate = Color(1, 1, 1, 0.403922)
+[node name="TextureRect3" type="TextureRect" parent="Control1"]
 layout_mode = 0
-offset_left = -8.0
-offset_top = -8.0
-offset_right = 1152.0
-offset_bottom = 649.0
+offset_left = -5.0
+offset_top = -4.0
+offset_right = 1155.0
+offset_bottom = 653.0
 texture = ExtResource("2_uypv3")
 expand_mode = 2
-metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect4" type="TextureRect" parent="Control1"]
+modulate = Color(1, 1, 1, 0.4)
+self_modulate = Color(0.17, 0.17, 0.17, 0.509804)
+light_mask = 983040
+layout_mode = 0
+offset_left = -1.0
+offset_right = 1162.0
+offset_bottom = 588.0
+texture = ExtResource("3_hkr3r")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="TextureButton" type="TextureButton" parent="Control1"]
 layout_mode = 0
@@ -66,36 +77,38 @@ offset_top = 544.0
 offset_right = 688.0
 offset_bottom = 632.0
 
-[node name="TextureRect2" type="TextureRect" parent="Control1"]
-modulate = Color(1, 1, 1, 0.231373)
-layout_mode = 0
-offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-texture = ExtResource("3_hkr3r")
-expand_mode = 1
-
 [node name="Continue1" type="Button" parent="Control1"]
 layout_mode = 0
-offset_left = 880.0
-offset_top = 536.0
-offset_right = 1078.0
-offset_bottom = 605.0
+offset_left = 476.0
+offset_top = 384.0
+offset_right = 674.0
+offset_bottom = 453.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Continue"
+keep_pressed_outside = true
+text = "CONTINUE"
 icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
 [node name="Label" type="Label" parent="Control1"]
 layout_mode = 1
-offset_left = 288.0
-offset_top = 32.0
-offset_right = 864.0
-offset_bottom = 144.0
+offset_left = 191.0
+offset_top = 164.0
+offset_right = 958.0
+offset_bottom = 225.0
 theme_override_fonts/font = ExtResource("5_2lysm")
-theme_override_font_sizes/font_size = 23
-text = "Explain the reason for the game here"
+theme_override_font_sizes/font_size = 60
+text = "Nuture Data as a Taonga"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="RichTextLabel" type="Label" parent="Control1"]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 253.0
+offset_right = 915.0
+offset_bottom = 357.0
+text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii ika. I te hokinga mai o ona tuakana ki tatahi, ka kii atu a Maui, “ka taea e au te haramai i to koutou na taha ki te hii ika?” "
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -111,44 +124,45 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="Control2"]
-modulate = Color(1, 1, 1, 0.403922)
+[node name="TextureRect10" type="TextureRect" parent="Control2"]
 layout_mode = 0
-offset_left = -8.0
-offset_top = -8.0
-offset_right = 1152.0
-offset_bottom = 649.0
-texture = ExtResource("6_5nsg1")
+offset_left = -5.0
+offset_top = -4.0
+offset_right = 1155.0
+offset_bottom = 653.0
+texture = ExtResource("2_uypv3")
 expand_mode = 2
-metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect11" type="TextureRect" parent="Control2"]
+modulate = Color(1, 1, 1, 0.313726)
+self_modulate = Color(1, 1, 1, 0.643137)
+layout_mode = 0
+offset_left = -1.0
+offset_right = 1162.0
+offset_bottom = 588.0
+texture = ExtResource("3_hkr3r")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Label" type="Label" parent="Control2"]
 layout_mode = 1
-offset_left = 304.0
-offset_top = 144.0
-offset_right = 880.0
-offset_bottom = 256.0
+offset_left = 31.0
+offset_top = 29.0
+offset_right = 572.0
+offset_bottom = 161.0
 theme_override_fonts/font = ExtResource("5_2lysm")
-theme_override_font_sizes/font_size = 23
-text = "This is a story about how my life got switched upside down, Some other words about data and why you should worry"
-horizontal_alignment = 1
+theme_override_font_sizes/font_size = 35
+text = "Identify whether you would consider the following examples taonga to you"
 autowrap_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control2"]
+[node name="RichTextLabel8" type="Label" parent="Control2"]
 layout_mode = 0
-offset_left = 520.0
-offset_top = 544.0
-offset_right = 688.0
-offset_bottom = 632.0
-
-[node name="TextureRect2" type="TextureRect" parent="Control2"]
-modulate = Color(1, 1, 1, 0.231373)
-layout_mode = 0
-offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-texture = ExtResource("3_hkr3r")
-expand_mode = 1
+offset_left = 28.0
+offset_top = 157.0
+offset_right = 574.0
+offset_bottom = 261.0
+text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii ika. I te hokinga mai o ona tuakana ki tatahi, ka kii atu a Maui, “ka taea e au te haramai i to koutou na taha ki te hii ika?” "
+autowrap_mode = 2
 
 [node name="Continue2" type="Button" parent="Control2"]
 layout_mode = 0
@@ -157,10 +171,157 @@ offset_top = 536.0
 offset_right = 1078.0
 offset_bottom = 605.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Continue"
+text = "CONTINUE"
 icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Control2"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 276.0
+offset_right = 279.0
+offset_bottom = 377.0
+texture = ExtResource("7_agtkc")
+expand_mode = 1
+
+[node name="RichTextLabel" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 294.0
+offset_right = 264.0
+offset_bottom = 359.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Whakapapa or Whakapapa Connections"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="Control2"]
+layout_mode = 0
+offset_left = 586.0
+offset_top = 280.0
+offset_right = 845.0
+offset_bottom = 375.0
+texture = ExtResource("7_agtkc")
+expand_mode = 1
+
+[node name="RichTextLabel2" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 306.0
+offset_right = 836.0
+offset_bottom = 338.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Images of your Marae"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="Control2"]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 277.0
+offset_right = 566.0
+offset_bottom = 378.0
+texture = ExtResource("7_agtkc")
+expand_mode = 1
+
+[node name="RichTextLabel3" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 310.0
+offset_right = 550.0
+offset_bottom = 342.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Images of your Tipuna"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="Control2"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 431.0
+offset_right = 281.0
+offset_bottom = 521.0
+texture = ExtResource("7_agtkc")
+expand_mode = 1
+
+[node name="RichTextLabel4" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 466.0
+offset_right = 264.0
+offset_bottom = 498.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Images of my Children"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect7" type="TextureRect" parent="Control2"]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 431.0
+offset_right = 568.0
+offset_bottom = 518.0
+texture = ExtResource("7_agtkc")
+expand_mode = 1
+
+[node name="RichTextLabel5" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 461.0
+offset_right = 558.0
+offset_bottom = 493.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Livestream Tangi"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect8" type="TextureRect" parent="Control2"]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 427.0
+offset_right = 844.0
+offset_bottom = 515.0
+texture = ExtResource("7_agtkc")
+expand_mode = 1
+
+[node name="RichTextLabel6" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 598.0
+offset_top = 443.0
+offset_right = 830.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Marae and Whānau Documents"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect9" type="TextureRect" parent="Control2"]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 332.0
+offset_right = 1118.0
+offset_bottom = 461.0
+texture = ExtResource("7_agtkc")
+expand_mode = 1
+
+[node name="RichTextLabel7" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 871.0
+offset_top = 347.0
+offset_right = 1103.0
+offset_bottom = 446.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Private information for example: Birthdates, Names of Children"
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Control3" type="Control" parent="."]
 visible = false
@@ -174,16 +335,25 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="Control3"]
-modulate = Color(1, 1, 1, 0.403922)
+[node name="TextureRect3" type="TextureRect" parent="Control3"]
 layout_mode = 0
-offset_left = -8.0
-offset_top = -8.0
-offset_right = 1152.0
-offset_bottom = 649.0
+offset_left = -5.0
+offset_top = -4.0
+offset_right = 1155.0
+offset_bottom = 653.0
 texture = ExtResource("2_uypv3")
 expand_mode = 2
-metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect4" type="TextureRect" parent="Control3"]
+modulate = Color(1, 1, 1, 0.313726)
+self_modulate = Color(1, 1, 1, 0.643137)
+layout_mode = 0
+offset_left = -1.0
+offset_right = 1162.0
+offset_bottom = 588.0
+texture = ExtResource("3_hkr3r")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="TextureButton" type="TextureButton" parent="Control3"]
 layout_mode = 0
@@ -191,15 +361,6 @@ offset_left = 520.0
 offset_top = 544.0
 offset_right = 688.0
 offset_bottom = 632.0
-
-[node name="TextureRect2" type="TextureRect" parent="Control3"]
-modulate = Color(1, 1, 1, 0.231373)
-layout_mode = 0
-offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-texture = ExtResource("3_hkr3r")
-expand_mode = 1
 
 [node name="Continue3" type="Button" parent="Control3"]
 layout_mode = 0
@@ -398,7 +559,6 @@ script = ExtResource("13_08a5y")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="Control5"]
-modulate = Color(1, 1, 1, 0.403922)
 layout_mode = 0
 offset_left = -8.0
 offset_top = -8.0
@@ -406,7 +566,6 @@ offset_right = 1152.0
 offset_bottom = 649.0
 texture = ExtResource("2_uypv3")
 expand_mode = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton" type="TextureButton" parent="Control5"]
 layout_mode = 0
@@ -416,44 +575,45 @@ offset_right = 688.0
 offset_bottom = 632.0
 
 [node name="TextureRect2" type="TextureRect" parent="Control5"]
-modulate = Color(1, 1, 1, 0.231373)
+modulate = Color(1, 1, 1, 0.313726)
+self_modulate = Color(1, 1, 1, 0.643137)
 layout_mode = 0
 offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_right = 1162.0
+offset_bottom = 588.0
 texture = ExtResource("3_hkr3r")
 expand_mode = 1
+stretch_mode = 4
 
 [node name="Continue5" type="Button" parent="Control5"]
 layout_mode = 0
-offset_left = 880.0
-offset_top = 536.0
-offset_right = 1078.0
-offset_bottom = 605.0
+offset_left = 898.0
+offset_top = 557.0
+offset_right = 1096.0
+offset_bottom = 626.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Continue"
+text = "CONTINUE"
 icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
 [node name="Label" type="Label" parent="Control5"]
 layout_mode = 1
-offset_left = 288.0
-offset_top = 32.0
-offset_right = 864.0
-offset_bottom = 144.0
+offset_left = 26.0
+offset_top = 20.0
+offset_right = 555.0
+offset_bottom = 125.0
 theme_override_fonts/font = ExtResource("5_2lysm")
-theme_override_font_sizes/font_size = 23
-text = "This is the 5th scene"
-horizontal_alignment = 1
+theme_override_font_sizes/font_size = 50
+text = "Where are my taonga stored?"
 autowrap_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="Control5"]
 layout_mode = 0
-offset_left = -91.0
-offset_top = 85.0
-offset_right = 1252.0
-offset_bottom = 532.0
+offset_left = 66.0
+offset_top = 193.0
+offset_right = 1089.0
+offset_bottom = 542.0
 texture = ExtResource("14_t0n8m")
 expand_mode = 1
 stretch_mode = 4
@@ -461,9 +621,9 @@ stretch_mode = 4
 [node name="GLine" type="TextureRect" parent="Control5"]
 visible = false
 layout_mode = 0
-offset_left = -91.0
-offset_top = 85.0
-offset_right = 1252.0
+offset_left = 64.0
+offset_top = 190.0
+offset_right = 1098.0
 offset_bottom = 532.0
 texture = ExtResource("15_grknh")
 expand_mode = 1
@@ -473,10 +633,10 @@ metadata/Name = &"GLine"
 [node name="FLine" type="TextureRect" parent="Control5"]
 visible = false
 layout_mode = 0
-offset_left = -91.0
-offset_top = 85.0
-offset_right = 1252.0
-offset_bottom = 532.0
+offset_left = 66.0
+offset_top = 190.0
+offset_right = 1091.0
+offset_bottom = 538.0
 texture = ExtResource("17_e7wty")
 expand_mode = 1
 stretch_mode = 4
@@ -485,10 +645,10 @@ metadata/Name = &"FLine"
 [node name="ILine" type="TextureRect" parent="Control5"]
 visible = false
 layout_mode = 0
-offset_left = -91.0
-offset_top = 85.0
-offset_right = 1252.0
-offset_bottom = 532.0
+offset_left = 66.0
+offset_top = 190.0
+offset_right = 1088.0
+offset_bottom = 535.0
 texture = ExtResource("16_6kg3c")
 expand_mode = 1
 stretch_mode = 4
@@ -497,10 +657,10 @@ metadata/Name = &"ILine"
 [node name="SLine" type="TextureRect" parent="Control5"]
 visible = false
 layout_mode = 0
-offset_left = -91.0
-offset_top = 85.0
-offset_right = 1252.0
-offset_bottom = 532.0
+offset_left = 66.0
+offset_top = 195.0
+offset_right = 1093.0
+offset_bottom = 537.0
 texture = ExtResource("18_rtbc7")
 expand_mode = 1
 stretch_mode = 4
@@ -509,14 +669,19 @@ metadata/Name = &"SLine"
 [node name="TLine" type="TextureRect" parent="Control5"]
 visible = false
 layout_mode = 0
-offset_left = -91.0
-offset_top = 85.0
-offset_right = 1252.0
-offset_bottom = 532.0
+offset_left = 65.0
+offset_top = 193.0
+offset_right = 1089.0
+offset_bottom = 538.0
 texture = ExtResource("19_iya7m")
 expand_mode = 1
 stretch_mode = 4
 metadata/Name = &"TLine"
+
+[node name="DisplayArray" type="Label" parent="Control5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="Control6" type="Control" parent="."]
 visible = false
