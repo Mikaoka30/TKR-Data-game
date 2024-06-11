@@ -4,7 +4,7 @@ func _on_visibility_changed():
 
 	# Get the TextureArray from the global script
 	var texture_array = SocialMediaVars.social_array
-	print(texture_array)
+
 	var hbox_container = $SocialMediaHbox
 	# Create VBoxContainers for each TextureRect and add them to the HBoxContainer
 	for texture in texture_array:
@@ -14,6 +14,7 @@ func _on_visibility_changed():
 		textureRect.texture = texture.texture
 		textureRect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		textureRect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		textureRect.custom_minimum_size = Vector2(40,40)
 		
 		# Add the TextureRect to thSocialMediaVboxe VBoxContainer
 		vbox_container.add_child(textureRect)

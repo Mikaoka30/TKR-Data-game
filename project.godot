@@ -19,10 +19,6 @@ config/icon="res://resources/Images/icon.svg"
 
 SocialMediaVars="*res://global/social_media_vars.gd"
 
-[display]
-
-window/size/always_on_top=true
-
 [dotnet]
 
 project/assembly_name="FirstGame"
@@ -30,6 +26,14 @@ project/assembly_name="FirstGame"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/copilot/plugin.cfg")
+
+[input]
+
+click={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
 
 [rendering]
 
