@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=23 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bhget0kbmpfpi" path="res://resources/Background/TKR_Image Library-66(1).jpg" id="2_uypv3"]
@@ -8,13 +8,16 @@
 [ext_resource type="Texture2D" uid="uid://dfhhbedbifxoj" path="res://resources/Images/logos/instragram-logo.png" id="7_fdf1h"]
 [ext_resource type="Texture2D" uid="uid://dt10brrnkmljv" path="res://resources/Images/logos/facebook-logo.png" id="9_y32jk"]
 [ext_resource type="Texture2D" uid="uid://dgq03itkvj2xr" path="res://resources/Images/logos/google-logo.png" id="11_1c24d"]
-[ext_resource type="Script" path="res://scripts/dropArea.gd" id="12_a40x0"]
-[ext_resource type="Script" path="res://scripts/dragAndDrop.gd" id="12_bmidt"]
+[ext_resource type="Texture2D" uid="uid://chflfxuartc0y" path="res://resources/Images/Graphics/1.png" id="12_d6g58"]
 [ext_resource type="Script" path="res://scripts/scene4.gd" id="12_efsti"]
+[ext_resource type="Script" path="res://scripts/dragAndDrop.gd" id="12_xsbjq"]
 [ext_resource type="Texture2D" uid="uid://vnq6p8hicdrq" path="res://resources/Images/logos/snapchat-logo.png" id="12_ybm6k"]
 [ext_resource type="Script" path="res://scripts/Control5.gd" id="13_08a5y"]
 [ext_resource type="Texture2D" uid="uid://wg26soqpq4un" path="res://resources/Images/logos/tiktok-logo.png" id="13_br4cw"]
+[ext_resource type="Texture2D" uid="uid://bpf1ugvhamomi" path="res://resources/Images/Graphics/4.png" id="14_g1xxx"]
 [ext_resource type="Texture2D" uid="uid://c67d02rorygca" path="res://resources/Background/20240411_102651550_iOS.png" id="14_qmgc8"]
+[ext_resource type="Texture2D" uid="uid://bv241g3vpv84l" path="res://resources/Images/Graphics/3.png" id="15_4i1nb"]
+[ext_resource type="Texture2D" uid="uid://f3jfq4xef3i1" path="res://resources/Images/Graphics/2.png" id="16_6mt43"]
 
 [sub_resource type="GDScript" id="GDScript_x82la"]
 script/source = "extends \"res://scripts/icon.gd\"
@@ -30,11 +33,8 @@ script/source = "extends \"res://scripts/icon.gd\"
 
 [sub_resource type="Theme" id="Theme_hou4k"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xdsmv"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_du25p"]
-
 [node name="Main" type="Node2D"]
+position = Vector2(595, 333)
 script = ExtResource("1_8u0md")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -250,62 +250,184 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
+[node name="TextureRect3" type="TextureRect" parent="Control4"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = -435.0
+offset_top = 163.0
+offset_right = -335.0
+offset_bottom = 263.0
+texture = ExtResource("12_d6g58")
+expand_mode = 1
+script = ExtResource("12_xsbjq")
+
+[node name="Panel" type="Panel" parent="Control4/TextureRect3"]
+show_behind_parent = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+mouse_filter = 2
+
 [node name="SocialMediaHbox" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
-layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -568.0
-offset_top = -320.0
-offset_right = -352.0
-offset_bottom = -280.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = -427.0
+offset_top = -309.0
+offset_right = -257.0
+offset_bottom = -269.0
 scale = Vector2(4.99004, 4.7252)
 theme = SubResource("Theme_hou4k")
 
 [node name="VBoxContainer9" type="VBoxContainer" parent="Control4/SocialMediaHbox"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.03
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer9" groups=["dropable"]]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("7_fdf1h")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer9"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("15_4i1nb")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("12_xsbjq")
+
+[node name="VBoxContainer10" type="VBoxContainer" parent="Control4/SocialMediaHbox"]
+custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 5.15
 
-[node name="TextureRect2" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer9" groups=["dropable"]]
-custom_minimum_size = Vector2(40, 40)
+[node name="TextureRect2" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer10" groups=["dropable"]]
+clip_contents = true
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("11_1c24d")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer10"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("15_4i1nb")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("12_xsbjq")
+
+[node name="VBoxContainer11" type="VBoxContainer" parent="Control4/SocialMediaHbox"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.03
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer11" groups=["dropable"]]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("9_y32jk")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer11"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("15_4i1nb")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("12_xsbjq")
+
+[node name="VBoxContainer12" type="VBoxContainer" parent="Control4/SocialMediaHbox"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.03
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer12" groups=["dropable"]]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+texture = ExtResource("13_br4cw")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer12"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("15_4i1nb")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("12_xsbjq")
+
+[node name="VBoxContainer13" type="VBoxContainer" parent="Control4/SocialMediaHbox"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.03
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer13" groups=["dropable"]]
+custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 texture = ExtResource("12_ybm6k")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Control4/SocialMediaHbox/VBoxContainer9" groups=["dropable"]]
-position = Vector2(19.4387, 19.0468)
-script = ExtResource("12_bmidt")
+[node name="TextureRect6" type="TextureRect" parent="Control4/SocialMediaHbox/VBoxContainer13"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("15_4i1nb")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("12_xsbjq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Control4/SocialMediaHbox/VBoxContainer9/StaticBody2D"]
-position = Vector2(-1.002, -0.211631)
-shape = SubResource("RectangleShape2D_xdsmv")
+[node name="TextureRect5" type="TextureRect" parent="Control4"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+offset_left = 117.0
+offset_top = 163.0
+offset_right = 217.0
+offset_bottom = 263.0
+texture = ExtResource("14_g1xxx")
+expand_mode = 1
+script = ExtResource("12_xsbjq")
 
-[node name="ColorRect" type="ColorRect" parent="Control4/SocialMediaHbox/VBoxContainer9/StaticBody2D/CollisionShape2D"]
-offset_left = -10.8216
-offset_top = -13.5444
-offset_right = 13.1784
-offset_bottom = 10.4556
-color = Color(0.847059, 0, 0, 1)
-metadata/_edit_use_anchors_ = true
+[node name="Panel" type="Panel" parent="Control4/TextureRect5"]
+show_behind_parent = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+mouse_filter = 2
 
-[node name="Node2D" type="Node2D" parent="Control4"]
-position = Vector2(1, 1)
-script = ExtResource("12_a40x0")
+[node name="TextureRect6" type="TextureRect" parent="Control4"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+offset_left = -67.0
+offset_top = 163.0
+offset_right = 33.0
+offset_bottom = 263.0
+texture = ExtResource("15_4i1nb")
+expand_mode = 1
+script = ExtResource("12_xsbjq")
 
-[node name="Sprite2D" type="Sprite2D" parent="Control4/Node2D"]
-texture = ExtResource("13_br4cw")
+[node name="TextureRect7" type="TextureRect" parent="Control4"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+offset_left = -243.0
+offset_top = 163.0
+offset_right = -143.0
+offset_bottom = 263.0
+texture = ExtResource("16_6mt43")
+expand_mode = 1
+script = ExtResource("12_xsbjq")
 
-[node name="Area2D" type="Area2D" parent="Control4/Node2D"]
-position = Vector2(1, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Control4/Node2D/Area2D"]
-shape = SubResource("RectangleShape2D_du25p")
+[node name="Panel" type="Panel" parent="Control4/TextureRect7"]
+show_behind_parent = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+mouse_filter = 2
 
 [node name="Control5" type="Control" parent="."]
 visible = false
@@ -449,8 +571,4 @@ scale = Vector2(1, 0.913285)
 [connection signal="pressed" from="Control3/Continue3" to="." method="_on_continue_3_pressed"]
 [connection signal="visibility_changed" from="Control4" to="Control4" method="_on_visibility_changed"]
 [connection signal="pressed" from="Control4/Continue4" to="." method="_on_continue_4_pressed"]
-[connection signal="body_entered" from="Control4/Node2D/Area2D" to="Control4/Node2D" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Control4/Node2D/Area2D" to="Control4/Node2D" method="_on_area_2d_body_exited"]
-[connection signal="mouse_entered" from="Control4/Node2D/Area2D" to="Control4/Node2D" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Control4/Node2D/Area2D" to="Control4/Node2D" method="_on_area_2d_mouse_exited"]
 [connection signal="visibility_changed" from="Control5" to="Control5" method="_on_visibility_changed"]
