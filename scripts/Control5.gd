@@ -2,6 +2,21 @@ extends Control
 
 # Display locations on map
 func _on_visibility_changed():
+	
+	var selection_array = SocialMediaVars.social_array
+	
+	#var hBox =  $DisplayHBox
+	#
+	#for selected in selection_array:
+		#var vContainer = VBoxContainer.new()
+		#var textSelected = Label.new()
+		#
+		#textSelected.selected = selected.selected
+		#
+		#vContainer.add_child(textSelected)
+		#hBox.add_child(vContainer)
+		
+	
 	for texture in SocialMediaVars.social_array:
 		var metadata = texture.get_meta("Name")
 		
@@ -25,3 +40,6 @@ func _on_visibility_changed():
 			"TikTok":
 				print("This is TikTok")
 				get_node("TLine").visible = true
+#
+#Display selected social media elements
+
