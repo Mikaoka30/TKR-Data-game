@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wg26soqpq4un"
-path="res://.godot/imported/tiktok-logo.png-2b7340ca6932f0cc32968c6dd06c4b21.ctex"
+uid="uid://cykcjjtk4vl5c"
+path="res://.godot/imported/img7.png-132106a6ca40e4b87107b780f88f6753.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Images/logos/tiktok-logo.png"
-dest_files=["res://.godot/imported/tiktok-logo.png-2b7340ca6932f0cc32968c6dd06c4b21.ctex"]
+source_file="res://resources/Images/Graphics/img7.png"
+dest_files=["res://.godot/imported/img7.png-132106a6ca40e4b87107b780f88f6753.ctex"]
 
 [params]
 

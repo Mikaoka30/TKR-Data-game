@@ -29,13 +29,10 @@ func toggle_selected():
 	is_selected = not is_selected
 	if is_selected:
 		self.scale = Vector2(1.2, 1.2) # Increase size when selected
-		SocialMediaVars.add_texture(self)
-		print(self)
+		SocialMediaVars.social_array.append(self)
+		print("Logo added")
 	else:
-		remove_texture_from_global(self)
+		var index = SocialMediaVars.social_array.find(self)
+		SocialMediaVars.social_array.remove_at(index)
+		print("Logo removed")
 		self.scale = Vector2(1, 1) # Reset to normal size when unselected
-
-# Function to remove a texture from the global array
-func remove_texture_from_global(texture_to_remove):
-	SocialMediaVars.remove_texture(texture_to_remove)
-	

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vnq6p8hicdrq"
-path="res://.godot/imported/snapchat-logo.png-296b2c10f7e59a3b5d8b86841e667c31.ctex"
+uid="uid://b5t6pmk5ml251"
+path="res://.godot/imported/G_card.png-59552114be6e477f8c68027d33f51307.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Images/logos/snapchat-logo.png"
-dest_files=["res://.godot/imported/snapchat-logo.png-296b2c10f7e59a3b5d8b86841e667c31.ctex"]
+source_file="res://resources/Images/logos/G_card.png"
+dest_files=["res://.godot/imported/G_card.png-59552114be6e477f8c68027d33f51307.ctex"]
 
 [params]
 
