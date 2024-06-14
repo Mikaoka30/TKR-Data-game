@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=26 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bvet4aowk5yh8" path="res://resources/Background/bg_pattern.png" id="2_tuvr7"]
@@ -6,21 +6,19 @@
 [ext_resource type="Texture2D" uid="uid://dxb8er60ckcwi" path="res://resources/Images/bg_trans.png" id="3_hkr3r"]
 [ext_resource type="Texture2D" uid="uid://dbcb68j3ybv83" path="res://resources/Images/Graphics/IdleBtn_sml_light.png" id="4_wlj0b"]
 [ext_resource type="FontFile" uid="uid://hy2kgo6bcwbf" path="res://resources/Fonts/Oxanium/Oxanium-VariableFont_wght.ttf" id="5_2lysm"]
-[ext_resource type="Texture2D" path="res://resources/Images/logos/FB_Card.png" id="6_2yo76"]
+[ext_resource type="Texture2D" uid="uid://ccvisyal8sguv" path="res://resources/Images/logos/FB_Card.png" id="6_2yo76"]
 [ext_resource type="Script" path="res://scripts/icon.gd" id="7_bl3jf"]
-[ext_resource type="Texture2D" path="res://resources/Images/logos/I_card.png" id="8_6k2d2"]
-[ext_resource type="Texture2D" path="res://resources/Images/logos/G_card.png" id="9_luljv"]
-[ext_resource type="Texture2D" path="res://resources/Images/logos/SC_card.png" id="10_wujdo"]
-[ext_resource type="Texture2D" path="res://resources/Images/logos/TT_card.png" id="11_t4k18"]
+[ext_resource type="Texture2D" uid="uid://51sn6uvxvsl0" path="res://resources/Images/logos/bg_cardsmall.png" id="7_suvgj"]
+[ext_resource type="FontFile" uid="uid://0j081jwln1lw" path="res://resources/Fonts/Bebas_Neue/BebasNeue-Regular.ttf" id="8_2d3kv"]
+[ext_resource type="Texture2D" uid="uid://c4gnl6268svar" path="res://resources/Images/logos/I_card.png" id="8_6k2d2"]
+[ext_resource type="Texture2D" uid="uid://b5t6pmk5ml251" path="res://resources/Images/logos/G_card.png" id="9_luljv"]
+[ext_resource type="Texture2D" uid="uid://2xlgk2ekmxlp" path="res://resources/Images/logos/SC_card.png" id="10_wujdo"]
+[ext_resource type="Texture2D" uid="uid://dtn6f5iko1b2m" path="res://resources/Images/logos/TT_card.png" id="11_t4k18"]
 [ext_resource type="Script" path="res://scripts/scene4.gd" id="12_efsti"]
 [ext_resource type="Script" path="res://scripts/Control5.gd" id="13_08a5y"]
-[ext_resource type="Texture2D" uid="uid://wg26soqpq4un" path="res://resources/Images/logos/tiktok-logo.png" id="13_br4cw"]
-[ext_resource type="Texture2D" uid="uid://bpf1ugvhamomi" path="res://resources/Images/Graphics/4.png" id="14_g1xxx"]
 [ext_resource type="Texture2D" uid="uid://c67d02rorygca" path="res://resources/Background/20240411_102651550_iOS.png" id="14_t0n8m"]
-[ext_resource type="Texture2D" uid="uid://bv241g3vpv84l" path="res://resources/Images/Graphics/3.png" id="15_4i1nb"]
 [ext_resource type="Texture2D" uid="uid://dgk2lwhbxt8lx" path="res://resources/Images/GoogleLine.png" id="15_grknh"]
 [ext_resource type="Texture2D" uid="uid://6xg80iium3lo" path="res://resources/Images/InstagramLine.png" id="16_6kg3c"]
-[ext_resource type="Texture2D" uid="uid://f3jfq4xef3i1" path="res://resources/Images/Graphics/2.png" id="16_6mt43"]
 [ext_resource type="Texture2D" uid="uid://bfc4d04xqqdo5" path="res://resources/Images/FB.png" id="17_e7wty"]
 [ext_resource type="Texture2D" uid="uid://dvrcy8d45mxh" path="res://resources/Background/TKR_Image Library-10-min.jpg" id="18_cc1eg"]
 [ext_resource type="Texture2D" uid="uid://bxngvk2st68g4" path="res://resources/Images/SnapchatLine.png" id="18_rtbc7"]
@@ -364,6 +362,7 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Control3" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
