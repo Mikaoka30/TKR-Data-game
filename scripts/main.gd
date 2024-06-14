@@ -16,6 +16,11 @@ func _on_continue_4_pressed():
 	get_node("Control4").visible = false
 	get_node("Control5").visible = true
 	
+
+func _on_continue_5_pressed():
+	get_node("Control5").visible = false
+	get_node("Control6").visible = true
+
 ##Function to toggle the visibility of the map lines
 var texture_gline
 var texture_fline
@@ -53,4 +58,3 @@ func _on_ibtn_pressed():
 
 func _on_tbtn_pressed():
 	texture_tline.visible = not texture_tline.visible
-

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=34 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bvet4aowk5yh8" path="res://resources/Background/bg_pattern.png" id="2_tuvr7"]
@@ -19,11 +19,19 @@
 [ext_resource type="Texture2D" uid="uid://c67d02rorygca" path="res://resources/Background/20240411_102651550_iOS.png" id="14_t0n8m"]
 [ext_resource type="Texture2D" uid="uid://dgk2lwhbxt8lx" path="res://resources/Images/GoogleLine.png" id="15_grknh"]
 [ext_resource type="Texture2D" uid="uid://6xg80iium3lo" path="res://resources/Images/InstagramLine.png" id="16_6kg3c"]
+[ext_resource type="Texture2D" uid="uid://c68acjij1wtwq" path="res://resources/Images/Graphics/img1.png" id="16_22v0p"]
+[ext_resource type="Script" path="res://scripts/dragAndDrop.gd" id="17_67om2"]
 [ext_resource type="Texture2D" uid="uid://bfc4d04xqqdo5" path="res://resources/Images/FB.png" id="17_e7wty"]
 [ext_resource type="Texture2D" uid="uid://dvrcy8d45mxh" path="res://resources/Background/TKR_Image Library-10-min.jpg" id="18_cc1eg"]
 [ext_resource type="Texture2D" uid="uid://bxngvk2st68g4" path="res://resources/Images/SnapchatLine.png" id="18_rtbc7"]
+[ext_resource type="Texture2D" uid="uid://c1aklyoudx0vh" path="res://resources/Images/Graphics/img2.png" id="18_ymvov"]
+[ext_resource type="Texture2D" uid="uid://cx1rqqhedy7si" path="res://resources/Images/Graphics/img3.png" id="19_1v4od"]
 [ext_resource type="Texture2D" uid="uid://bp6jqd75dcv44" path="res://resources/Images/TikTokLine.png" id="19_iya7m"]
-[ext_resource type="Script" path="res://Control6.gd" id="30_82deq"]
+[ext_resource type="Texture2D" uid="uid://tjmmtkdlgimb" path="res://resources/Images/Graphics/img4.png" id="20_bt18d"]
+[ext_resource type="Texture2D" uid="uid://3yoy8lnlo6xn" path="res://resources/Images/Graphics/img5.png" id="21_sac3n"]
+[ext_resource type="Texture2D" uid="uid://brnm6nkwuaxlr" path="res://resources/Images/Graphics/img6.png" id="22_cnvg2"]
+[ext_resource type="Texture2D" uid="uid://cykcjjtk4vl5c" path="res://resources/Images/Graphics/img7.png" id="23_ac4kc"]
+[ext_resource type="Script" path="res://scripts/Control6.gd" id="30_82deq"]
 
 [sub_resource type="Theme" id="Theme_hou4k"]
 
@@ -468,13 +476,25 @@ size_flags_horizontal = 4
 size_flags_vertical = 6
 script = ExtResource("12_efsti")
 
+[node name="Continue4" type="Button" parent="Control4"]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 176.0
+offset_right = 502.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Continue"
+icon = ExtResource("4_wlj0b")
+flat = true
+icon_alignment = 1
+
 [node name="SocialMediaHbox" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
 layout_mode = 0
 offset_left = -475.0
-offset_top = -309.0
+offset_top = -333.0
 offset_right = -284.0
-offset_bottom = -271.0
+offset_bottom = -295.0
 scale = Vector2(4.99004, 4.7252)
 theme_override_constants/separation = 6
 alignment = 1
@@ -483,11 +503,81 @@ alignment = 1
 layout_direction = 2
 layout_mode = 0
 offset_left = -555.0
-offset_top = 99.0
-offset_right = -382.0
-offset_bottom = 139.0
+offset_top = 171.0
+offset_right = -394.035
+offset_bottom = 184.0
 scale = Vector2(4.99004, 4.7252)
 theme = SubResource("Theme_hou4k")
+
+[node name="TextureRect" type="TextureRect" parent="Control4/ToangaHbox"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("16_22v0p")
+expand_mode = 1
+script = ExtResource("17_67om2")
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/ToangaHbox"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("18_ymvov")
+expand_mode = 1
+script = ExtResource("17_67om2")
+
+[node name="TextureRect3" type="TextureRect" parent="Control4/ToangaHbox"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("19_1v4od")
+expand_mode = 1
+script = ExtResource("17_67om2")
+
+[node name="ToangaHbox2" type="HBoxContainer" parent="Control4"]
+layout_direction = 2
+layout_mode = 0
+offset_left = -555.0
+offset_top = 243.0
+offset_right = -394.035
+offset_bottom = 256.0
+scale = Vector2(4.99004, 4.7252)
+theme = SubResource("Theme_hou4k")
+
+[node name="TextureRect" type="TextureRect" parent="Control4/ToangaHbox2"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("20_bt18d")
+expand_mode = 1
+script = ExtResource("17_67om2")
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/ToangaHbox2"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("21_sac3n")
+expand_mode = 1
+script = ExtResource("17_67om2")
+
+[node name="TextureRect3" type="TextureRect" parent="Control4/ToangaHbox2"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("22_cnvg2")
+expand_mode = 1
+script = ExtResource("17_67om2")
+
+[node name="TextureRect3" type="TextureRect" parent="Control4"]
+custom_minimum_size = Vector2(108, 40)
+layout_mode = 0
+offset_left = -107.0
+offset_top = 203.0
+offset_right = 29.0
+offset_bottom = 267.0
+size_flags_horizontal = 0
+texture = ExtResource("23_ac4kc")
+expand_mode = 1
+script = ExtResource("17_67om2")
 
 [node name="Control5" type="Control" parent="."]
 visible = false
@@ -812,7 +902,9 @@ scale = Vector2(1, 0.913285)
 [connection signal="pressed" from="Control2/Continue2" to="." method="_on_continue_2_pressed"]
 [connection signal="pressed" from="Control3/Continue3" to="." method="_on_continue_3_pressed"]
 [connection signal="visibility_changed" from="Control4" to="Control4" method="_on_visibility_changed"]
+[connection signal="pressed" from="Control4/Continue4" to="." method="_on_continue_4_pressed"]
 [connection signal="visibility_changed" from="Control5" to="Control5" method="_on_visibility_changed"]
+[connection signal="pressed" from="Control5/Continue5" to="." method="_on_continue_5_pressed"]
 [connection signal="pressed" from="Control5/gbtn" to="Control5" method="_on_gbtn_pressed"]
 [connection signal="pressed" from="Control5/fbtn" to="Control5" method="_on_fbtn_pressed"]
 [connection signal="pressed" from="Control5/ibtn" to="Control5" method="_on_ibtn_pressed"]
