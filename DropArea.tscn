@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://beljs38bscdng"]
+
+[ext_resource type="StyleBox" uid="uid://bsubsfdlly4qr" path="res://new_style_box_flat.tres" id="1_wh3vq"]
+
+[node name="DropArea" type="TextureRect"]
+custom_minimum_size = Vector2(26, 8)
+offset_right = 30.0
+offset_bottom = 8.0
+expand_mode = 1
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 30.0
+offset_bottom = 8.0
+theme_override_styles/panel = ExtResource("1_wh3vq")

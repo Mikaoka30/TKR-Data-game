@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd4txukxbi77i"
-path="res://.godot/imported/HoverBtn_sml_dark.png-ee3730d8a3c26aec744917a92f10cb17.ctex"
+uid="uid://brnm6nkwuaxlr"
+path="res://.godot/imported/img6.png-a36696036018625ce4bbfec8b8ac0afc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Images/Graphics/HoverBtn_sml_dark.png"
-dest_files=["res://.godot/imported/HoverBtn_sml_dark.png-ee3730d8a3c26aec744917a92f10cb17.ctex"]
+source_file="res://resources/Images/Graphics/img6.png"
+dest_files=["res://.godot/imported/img6.png-a36696036018625ce4bbfec8b8ac0afc.ctex"]
 
 [params]
 

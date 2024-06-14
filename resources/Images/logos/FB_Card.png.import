@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgq03itkvj2xr"
-path="res://.godot/imported/google-logo.png-ef37936aceb2d1d2c56fc227c7ce4392.ctex"
+uid="uid://ccvisyal8sguv"
+path="res://.godot/imported/FB_Card.png-5c933ac8d80e97d495a99631e404e8a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Images/logos/google-logo.png"
-dest_files=["res://.godot/imported/google-logo.png-ef37936aceb2d1d2c56fc227c7ce4392.ctex"]
+source_file="res://resources/Images/logos/FB_Card.png"
+dest_files=["res://.godot/imported/FB_Card.png-5c933ac8d80e97d495a99631e404e8a3.ctex"]
 
 [params]
 
