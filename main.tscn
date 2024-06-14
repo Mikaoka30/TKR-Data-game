@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=30 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bvet4aowk5yh8" path="res://resources/Background/bg_pattern.png" id="2_tuvr7"]
@@ -19,26 +19,15 @@
 [ext_resource type="Texture2D" uid="uid://wg26soqpq4un" path="res://resources/Images/logos/tiktok-logo.png" id="13_br4cw"]
 [ext_resource type="Texture2D" uid="uid://bpf1ugvhamomi" path="res://resources/Images/Graphics/4.png" id="14_g1xxx"]
 [ext_resource type="Texture2D" uid="uid://c67d02rorygca" path="res://resources/Background/20240411_102651550_iOS.png" id="14_t0n8m"]
+[ext_resource type="Texture2D" uid="uid://bv241g3vpv84l" path="res://resources/Images/Graphics/3.png" id="15_4i1nb"]
 [ext_resource type="Texture2D" uid="uid://dgk2lwhbxt8lx" path="res://resources/Images/GoogleLine.png" id="15_grknh"]
 [ext_resource type="Texture2D" uid="uid://6xg80iium3lo" path="res://resources/Images/InstagramLine.png" id="16_6kg3c"]
+[ext_resource type="Texture2D" uid="uid://f3jfq4xef3i1" path="res://resources/Images/Graphics/2.png" id="16_6mt43"]
 [ext_resource type="Texture2D" uid="uid://bfc4d04xqqdo5" path="res://resources/Images/FB.png" id="17_e7wty"]
 [ext_resource type="Texture2D" uid="uid://dvrcy8d45mxh" path="res://resources/Background/TKR_Image Library-10-min.jpg" id="18_cc1eg"]
 [ext_resource type="Texture2D" uid="uid://bxngvk2st68g4" path="res://resources/Images/SnapchatLine.png" id="18_rtbc7"]
 [ext_resource type="Texture2D" uid="uid://bp6jqd75dcv44" path="res://resources/Images/TikTokLine.png" id="19_iya7m"]
-[ext_resource type="Texture2D" uid="uid://bv241g3vpv84l" path="res://resources/Images/Graphics/3.png" id="15_4i1nb"]
-[ext_resource type="Texture2D" uid="uid://f3jfq4xef3i1" path="res://resources/Images/Graphics/2.png" id="16_6mt43"]
-
-[sub_resource type="GDScript" id="GDScript_x82la"]
-script/source = "extends \"res://scripts/icon.gd\"
-"
-
-[sub_resource type="GDScript" id="GDScript_u50a5"]
-script/source = "extends \"res://scripts/icon.gd\"
-"
-
-[sub_resource type="GDScript" id="GDScript_ynv8d"]
-script/source = "extends \"res://scripts/icon.gd\"
-"
+[ext_resource type="Script" path="res://Control6.gd" id="30_82deq"]
 
 [sub_resource type="Theme" id="Theme_hou4k"]
 
@@ -59,6 +48,13 @@ offset_top = -640.0
 offset_right = 1064.0
 offset_bottom = 664.0
 texture = ExtResource("2_tuvr7")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -594.0
+offset_top = -342.0
+offset_right = 584.0
+offset_bottom = 330.0
+color = Color(0.611765, 0.415686, 0.211765, 1)
 
 [node name="TextureRect5" type="TextureRect" parent="."]
 offset_left = -584.0
@@ -81,6 +77,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Control1" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -371,7 +368,6 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Control3" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -396,45 +392,15 @@ icon_alignment = 1
 
 [node name="Label" type="Label" parent="Control3"]
 layout_mode = 1
+offset_left = -523.0
+offset_top = -285.0
+offset_right = -126.0
+offset_bottom = -268.0
 theme_override_fonts/font = ExtResource("5_2lysm")
 autowrap_mode = 2
 
-[node name="Instagram" type="TextureRect" parent="Control3"]
-layout_mode = 0
-texture = ExtResource("7_fdf1h")
-expand_mode = 5
-script = SubResource("GDScript_x82la")
-metadata/Name = &"Instagram"
-
-[node name="Facebook" type="TextureRect" parent="Control3"]
-layout_mode = 0
-texture = ExtResource("9_y32jk")
-expand_mode = 3
-script = SubResource("GDScript_u50a5")
-metadata/Name = &"Facebook"
-
-[node name="Google" type="TextureRect" parent="Control3"]
-layout_mode = 0
-texture = ExtResource("11_1c24d")
-expand_mode = 3
-script = SubResource("GDScript_u50a5")
-metadata/Name = &"Google"
-
-[node name="Snapchat" type="TextureRect" parent="Control3"]
-layout_mode = 0
-texture = ExtResource("12_ybm6k")
-expand_mode = 1
-script = SubResource("GDScript_ynv8d")
-metadata/Name = &"Snapchat"
-
-[node name="TikTok" type="TextureRect" parent="Control3"]
-layout_mode = 0
-texture = ExtResource("13_br4cw")
-expand_mode = 1
-script = SubResource("GDScript_ynv8d")
-metadata/Name = &"TikTok"
-
 [node name="Control4" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -454,9 +420,14 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 309.0
+offset_top = 187.0
+offset_right = 507.0
+offset_bottom = 256.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "CONTINUE"
 icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
@@ -598,6 +569,7 @@ script = ExtResource("12_xsbjq")
 [node name="TextureRect5" type="TextureRect" parent="Control4"]
 clip_contents = true
 custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
 offset_left = 117.0
 offset_top = 163.0
 offset_right = 217.0
@@ -615,6 +587,7 @@ mouse_filter = 2
 [node name="TextureRect6" type="TextureRect" parent="Control4"]
 clip_contents = true
 custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
 offset_left = -67.0
 offset_top = 163.0
 offset_right = 33.0
@@ -626,6 +599,7 @@ script = ExtResource("12_xsbjq")
 [node name="TextureRect7" type="TextureRect" parent="Control4"]
 clip_contents = true
 custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
 offset_left = -243.0
 offset_top = 163.0
 offset_right = -143.0
@@ -796,13 +770,55 @@ layout_mode = 0
 offset_left = -541.0
 offset_top = 224.0
 offset_right = -128.0
-offset_bottom = 323.0
+offset_bottom = 245.0
 theme_override_font_sizes/font_size = 10
-text = "Google - Red
-Facebook - Blue
-TikTok - Green
-Snapchat - Yellow
-Instagram - Pink"
+text = "Toggle Map Lines:"
+uppercase = true
+
+[node name="gbtn" type="Button" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -541.0
+offset_top = 243.0
+offset_right = -453.0
+offset_bottom = 274.0
+text = "Google"
+
+[node name="fbtn" type="Button" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -445.0
+offset_top = 243.0
+offset_right = -358.0
+offset_bottom = 274.0
+text = "Facebook"
+
+[node name="ibtn" type="Button" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -349.0
+offset_top = 243.0
+offset_right = -262.0
+offset_bottom = 274.0
+text = "Instagram"
+
+[node name="sbtn" type="Button" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -253.0
+offset_top = 243.0
+offset_right = -166.0
+offset_bottom = 274.0
+text = "Snapchat"
+
+[node name="tbtn" type="Button" parent="Control5"]
+visible = false
+layout_mode = 0
+offset_left = -157.0
+offset_top = 243.0
+offset_right = -70.0
+offset_bottom = 274.0
+text = "TikTok"
 
 [node name="Control6" type="Control" parent="."]
 visible = false
@@ -814,41 +830,15 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("30_82deq")
 metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect" type="TextureRect" parent="Control6"]
-modulate = Color(1, 1, 1, 0.403922)
-layout_mode = 0
-offset_left = -8.0
-offset_top = -8.0
-offset_right = 1152.0
-offset_bottom = 649.0
-texture = ExtResource("2_uypv3")
-expand_mode = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureButton" type="TextureButton" parent="Control6"]
-layout_mode = 0
-offset_left = 520.0
-offset_top = 544.0
-offset_right = 688.0
-offset_bottom = 632.0
-
-[node name="TextureRect2" type="TextureRect" parent="Control6"]
-modulate = Color(1, 1, 1, 0.231373)
-layout_mode = 0
-offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 648.0
-texture = ExtResource("3_hkr3r")
-expand_mode = 1
 
 [node name="Continue5" type="Button" parent="Control6"]
 layout_mode = 0
-offset_left = 880.0
-offset_top = 536.0
-offset_right = 1078.0
-offset_bottom = 605.0
+offset_left = 341.0
+offset_top = 235.0
+offset_right = 539.0
+offset_bottom = 304.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Continue"
 icon = ExtResource("4_wlj0b")
@@ -857,15 +847,87 @@ icon_alignment = 1
 
 [node name="Label" type="Label" parent="Control6"]
 layout_mode = 1
-offset_left = 288.0
-offset_top = 32.0
-offset_right = 864.0
-offset_bottom = 144.0
+offset_left = -531.0
+offset_top = -304.0
+offset_right = 45.0
+offset_bottom = -245.0
 theme_override_fonts/font = ExtResource("5_2lysm")
-theme_override_font_sizes/font_size = 23
-text = "This is the last scene"
-horizontal_alignment = 1
+theme_override_font_sizes/font_size = 35
+text = "Resources to protect your data"
 autowrap_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control6"]
+layout_mode = 0
+offset_left = -523.0
+offset_top = -221.0
+offset_right = 498.0
+offset_bottom = 224.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control6/ScrollContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control6/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "test"
+uppercase = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "VISIT WEBSITE"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "VISIT WEBSITE"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "VISIT WEBSITE"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "VISIT WEBSITE"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
@@ -877,3 +939,12 @@ scale = Vector2(1, 0.913285)
 [connection signal="visibility_changed" from="Control4" to="Control4" method="_on_visibility_changed"]
 [connection signal="pressed" from="Control4/Continue4" to="." method="_on_continue_4_pressed"]
 [connection signal="visibility_changed" from="Control5" to="Control5" method="_on_visibility_changed"]
+[connection signal="pressed" from="Control5/gbtn" to="Control5" method="_on_gbtn_pressed"]
+[connection signal="pressed" from="Control5/fbtn" to="Control5" method="_on_fbtn_pressed"]
+[connection signal="pressed" from="Control5/ibtn" to="Control5" method="_on_ibtn_pressed"]
+[connection signal="pressed" from="Control5/sbtn" to="Control5" method="_on_sbtn_pressed"]
+[connection signal="pressed" from="Control5/tbtn" to="Control5" method="_on_tbtn_pressed"]
+[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
+[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer3/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
+[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer2/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
+[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer4/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
