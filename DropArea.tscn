@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://beljs38bscdng"]
+[gd_scene load_steps=3 format=3 uid="uid://bpflxwikhq2hj"]
 
-[ext_resource type="Script" path="res://scripts/DropArea.gd" id="1_h4tqs"]
-[ext_resource type="StyleBox" uid="uid://bsubsfdlly4qr" path="res://new_style_box_flat.tres" id="1_wh3vq"]
+[ext_resource type="Script" path="res://scripts/drop_area.gd" id="1_e5jqy"]
+[ext_resource type="StyleBox" path="res://new_style_box_flat.tres" id="1_wh3vq"]
 
 [node name="DropArea" type="TextureRect"]
 custom_minimum_size = Vector2(26, 8)
 offset_right = 30.0
 offset_bottom = 8.0
 expand_mode = 1
-script = ExtResource("1_h4tqs")
+script = ExtResource("1_e5jqy")
 
 [node name="Panel2" type="Panel" parent="."]
 layout_mode = 0

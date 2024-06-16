@@ -14,13 +14,13 @@
 [ext_resource type="Texture2D" uid="uid://b5t6pmk5ml251" path="res://resources/Images/logos/G_card.png" id="9_luljv"]
 [ext_resource type="Texture2D" uid="uid://2xlgk2ekmxlp" path="res://resources/Images/logos/SC_card.png" id="10_wujdo"]
 [ext_resource type="Texture2D" uid="uid://dtn6f5iko1b2m" path="res://resources/Images/logos/TT_card.png" id="11_t4k18"]
-[ext_resource type="Script" path="res://scripts/scene4.gd" id="12_efsti"]
-[ext_resource type="Script" path="res://scripts/Control5.gd" id="13_08a5y"]
+[ext_resource type="Script" path="res://scripts/scene_4.gd" id="12_efsti"]
+[ext_resource type="Script" path="res://scripts/control_5.gd" id="13_08a5y"]
 [ext_resource type="Texture2D" uid="uid://c67d02rorygca" path="res://resources/Background/20240411_102651550_iOS.png" id="14_t0n8m"]
 [ext_resource type="Texture2D" uid="uid://dgk2lwhbxt8lx" path="res://resources/Images/GoogleLine.png" id="15_grknh"]
 [ext_resource type="Texture2D" uid="uid://6xg80iium3lo" path="res://resources/Images/InstagramLine.png" id="16_6kg3c"]
 [ext_resource type="Texture2D" uid="uid://c68acjij1wtwq" path="res://resources/Images/Graphics/img1.png" id="16_22v0p"]
-[ext_resource type="Script" path="res://scripts/dragAndDrop.gd" id="17_67om2"]
+[ext_resource type="Script" path="res://scripts/drag_only.gd" id="17_1587p"]
 [ext_resource type="Texture2D" uid="uid://bfc4d04xqqdo5" path="res://resources/Images/FB.png" id="17_e7wty"]
 [ext_resource type="Texture2D" uid="uid://dvrcy8d45mxh" path="res://resources/Background/TKR_Image Library-10-min.jpg" id="18_cc1eg"]
 [ext_resource type="Texture2D" uid="uid://bxngvk2st68g4" path="res://resources/Images/SnapchatLine.png" id="18_rtbc7"]
@@ -31,7 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://3yoy8lnlo6xn" path="res://resources/Images/Graphics/img5.png" id="21_sac3n"]
 [ext_resource type="Texture2D" uid="uid://brnm6nkwuaxlr" path="res://resources/Images/Graphics/img6.png" id="22_cnvg2"]
 [ext_resource type="Texture2D" uid="uid://cykcjjtk4vl5c" path="res://resources/Images/Graphics/img7.png" id="23_ac4kc"]
-[ext_resource type="Script" path="res://scripts/Control6.gd" id="30_82deq"]
+[ext_resource type="Script" path="res://scripts/control_6.gd" id="30_82deq"]
 
 [sub_resource type="Theme" id="Theme_hou4k"]
 
@@ -75,7 +75,7 @@ light_mask = 983040
 offset_left = -580.0
 offset_top = -332.0
 offset_right = 583.0
-offset_bottom = 256.0
+offset_bottom = 323.0
 texture = ExtResource("3_hkr3r")
 expand_mode = 1
 
@@ -393,22 +393,13 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
-[node name="Label" type="Label" parent="Control3"]
-layout_mode = 1
-offset_left = -523.0
-offset_top = -285.0
-offset_right = -126.0
-offset_bottom = -268.0
-theme_override_fonts/font = ExtResource("5_2lysm")
-autowrap_mode = 2
-
 [node name="Facebook" type="TextureRect" parent="Control3"]
 custom_minimum_size = Vector2(160, 160)
 layout_mode = 0
 offset_left = -427.0
-offset_top = -205.0
+offset_top = -165.0
 offset_right = -267.0
-offset_bottom = -45.0
+offset_bottom = -5.0
 texture = ExtResource("6_2yo76")
 expand_mode = 1
 stretch_mode = 5
@@ -430,9 +421,9 @@ script = ExtResource("7_bl3jf")
 custom_minimum_size = Vector2(160, 160)
 layout_mode = 0
 offset_left = -75.0
-offset_top = -205.0
+offset_top = -165.0
 offset_right = 85.0
-offset_bottom = -45.0
+offset_bottom = -5.0
 texture = ExtResource("9_luljv")
 expand_mode = 1
 stretch_mode = 5
@@ -454,13 +445,25 @@ script = ExtResource("7_bl3jf")
 custom_minimum_size = Vector2(160, 160)
 layout_mode = 0
 offset_left = 285.0
-offset_top = -205.0
+offset_top = -165.0
 offset_right = 445.0
-offset_bottom = -45.0
+offset_bottom = -5.0
 texture = ExtResource("11_t4k18")
 expand_mode = 1
 stretch_mode = 5
 script = ExtResource("7_bl3jf")
+
+[node name="Label" type="Label" parent="Control3"]
+layout_mode = 0
+offset_left = -267.0
+offset_top = -309.0
+offset_right = 274.0
+offset_bottom = -177.0
+theme_override_fonts/font = ExtResource("5_2lysm")
+theme_override_font_sizes/font_size = 35
+text = "Select which social media platform you use"
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Control4" type="Control" parent="."]
 visible = false
@@ -491,9 +494,9 @@ icon_alignment = 1
 [node name="SocialMediaHbox" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
 layout_mode = 0
-offset_left = -475.0
+offset_left = -491.0
 offset_top = -333.0
-offset_right = -284.0
+offset_right = -300.0
 offset_bottom = -295.0
 scale = Vector2(4.99004, 4.7252)
 theme_override_constants/separation = 6
@@ -515,7 +518,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 texture = ExtResource("16_22v0p")
 expand_mode = 1
-script = ExtResource("17_67om2")
+script = ExtResource("17_1587p")
 
 [node name="TextureRect2" type="TextureRect" parent="Control4/ToangaHbox"]
 custom_minimum_size = Vector2(26, 0)
@@ -523,7 +526,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 texture = ExtResource("18_ymvov")
 expand_mode = 1
-script = ExtResource("17_67om2")
+script = ExtResource("17_1587p")
 
 [node name="TextureRect3" type="TextureRect" parent="Control4/ToangaHbox"]
 custom_minimum_size = Vector2(26, 0)
@@ -531,7 +534,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 texture = ExtResource("19_1v4od")
 expand_mode = 1
-script = ExtResource("17_67om2")
+script = ExtResource("17_1587p")
 
 [node name="ToangaHbox2" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
@@ -549,7 +552,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 texture = ExtResource("20_bt18d")
 expand_mode = 1
-script = ExtResource("17_67om2")
+script = ExtResource("17_1587p")
 
 [node name="TextureRect2" type="TextureRect" parent="Control4/ToangaHbox2"]
 custom_minimum_size = Vector2(26, 0)
@@ -557,7 +560,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 texture = ExtResource("21_sac3n")
 expand_mode = 1
-script = ExtResource("17_67om2")
+script = ExtResource("17_1587p")
 
 [node name="TextureRect3" type="TextureRect" parent="Control4/ToangaHbox2"]
 custom_minimum_size = Vector2(26, 0)
@@ -565,7 +568,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 texture = ExtResource("22_cnvg2")
 expand_mode = 1
-script = ExtResource("17_67om2")
+script = ExtResource("17_1587p")
 
 [node name="TextureRect3" type="TextureRect" parent="Control4"]
 custom_minimum_size = Vector2(108, 40)
@@ -577,7 +580,19 @@ offset_bottom = 267.0
 size_flags_horizontal = 0
 texture = ExtResource("23_ac4kc")
 expand_mode = 1
-script = ExtResource("17_67om2")
+script = ExtResource("17_1587p")
+
+[node name="Label2" type="Label" parent="Control4"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 171.0
+offset_right = 293.0
+offset_bottom = 303.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_2lysm")
+theme_override_font_sizes/font_size = 26
+text = "Drag and drop the toanga to each platform you use"
+autowrap_mode = 2
 
 [node name="Control5" type="Control" parent="."]
 visible = false
