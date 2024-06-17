@@ -58,3 +58,27 @@ func _on_ibtn_pressed():
 
 func _on_tbtn_pressed():
 	texture_tline.visible = not texture_tline.visible
+	
+	
+func _on_back_2_pressed():
+	get_node("Control1").visible = true
+	get_node("Control2").visible = false
+	
+	
+func _on_back_3_pressed():
+	get_node("Control2").visible = true
+	get_node("Control3").visible = false
+
+
+func _on_back_4_pressed():
+	get_node("Control3").visible = true
+	get_node("Control4").visible = false
+
+
+func _on_back_5_pressed():
+	get_node("Control4").visible = true
+	get_node("Control5").visible = false
+
+func _on_back_6_pressed():
+	get_node("Control5").visible = true
+	get_node("Control6").visible = false
