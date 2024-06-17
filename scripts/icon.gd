@@ -7,6 +7,7 @@ var is_selected = false
 func _ready():
 	set_process_input(true) # Enable input processing
 	
+
 func _gui_input(event):
 	if event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT:
 		toggle_selected()
