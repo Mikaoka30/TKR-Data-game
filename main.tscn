@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=34 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bvet4aowk5yh8" path="res://resources/Background/bg_pattern.png" id="2_tuvr7"]
@@ -691,7 +691,7 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
-[node name="Label" type="Label" parent="Control5"]
+[node name="Label2" type="Label" parent="Control5"]
 layout_mode = 1
 offset_left = -523.0
 offset_top = -309.0
@@ -787,7 +787,7 @@ offset_bottom = 40.0
 [node name="DisplayVBox" type="VBoxContainer" parent="Control5/DisplayHBox"]
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="Control5"]
+[node name="Label3" type="Label" parent="Control5"]
 layout_mode = 0
 offset_left = -541.0
 offset_top = 224.0
@@ -844,6 +844,7 @@ text = "TikTok"
 
 [node name="Back5" type="Button" parent="Control5"]
 custom_minimum_size = Vector2(20, 20)
+layout_mode = 0
 offset_left = -571.0
 offset_top = -309.0
 offset_right = -531.0
