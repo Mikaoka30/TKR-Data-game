@@ -3,13 +3,15 @@ extends Control
 func _on_visibility_changed():
 
 	# Get the TextureArray from the global script
-
 	var social_media_hbox = $SocialMediaHbox
 	var dropArea = preload("res://DropArea.tscn")
 	
+	for social_media in social_media_hbox.get_children():
+		social_media_hbox.remove_child(social_media)
+		
+		
 	#Add social media to top hbox and create a vbox for each one
 	#Each vbox will have "dropable" areas equal to the amount of toanga
-
 	for texture in SocialMediaVars.social_array:
 		# Create a VBoxContainer to hold the icon
 		var vbox_container = VBoxContainer.new()

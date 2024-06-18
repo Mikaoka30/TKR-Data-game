@@ -213,9 +213,9 @@ stretch_mode = 4
 [node name="Label" type="Label" parent="Control2"]
 layout_mode = 1
 offset_left = -515.0
-offset_top = -309.0
+offset_top = -301.0
 offset_right = 26.0
-offset_bottom = -177.0
+offset_bottom = -169.0
 theme_override_fonts/font = ExtResource("5_2lysm")
 theme_override_font_sizes/font_size = 35
 text = "Identify whether you would consider the following examples taonga to you"
@@ -224,9 +224,9 @@ autowrap_mode = 2
 [node name="RichTextLabel8" type="Label" parent="Control2"]
 layout_mode = 0
 offset_left = -515.0
-offset_top = -189.0
+offset_top = -181.0
 offset_right = 309.0
-offset_bottom = -133.0
+offset_bottom = -125.0
 text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii ika. I te hokinga mai o ona tuakana ki tatahi, ka kii atu a Maui, “ka taea e au te haramai i to koutou na taha ki te hii ika?” "
 autowrap_mode = 2
 
@@ -490,10 +490,10 @@ metadata/Name = &"TikTok"
 
 [node name="Label" type="Label" parent="Control3"]
 layout_mode = 0
-offset_left = -534.0
-offset_top = -304.0
-offset_right = 7.0
-offset_bottom = -172.0
+offset_left = -523.0
+offset_top = -301.0
+offset_right = 18.0
+offset_bottom = -169.0
 theme_override_fonts/font = ExtResource("5_2lysm")
 theme_override_font_sizes/font_size = 35
 text = "Select which social media platform you use"
@@ -626,9 +626,9 @@ script = ExtResource("17_1587p")
 
 [node name="Label2" type="Label" parent="Control4"]
 layout_mode = 0
-offset_left = -539.0
+offset_left = -523.0
 offset_top = -301.0
-offset_right = 413.0
+offset_right = 429.0
 offset_bottom = -253.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_2lysm")
@@ -661,10 +661,10 @@ expand_mode = 2
 
 [node name="Label" type="Label" parent="Control5"]
 layout_mode = 1
-offset_left = -536.0
-offset_top = -304.0
-offset_right = -7.0
-offset_bottom = -199.0
+offset_left = -523.0
+offset_top = -301.0
+offset_right = 6.0
+offset_bottom = -196.0
 theme_override_fonts/font = ExtResource("5_2lysm")
 theme_override_font_sizes/font_size = 35
 text = "Where are my taonga stored?"
@@ -690,17 +690,6 @@ text = "CONTINUE"
 icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
-
-[node name="Label2" type="Label" parent="Control5"]
-layout_mode = 1
-offset_left = -523.0
-offset_top = -309.0
-offset_right = 6.0
-offset_bottom = -204.0
-theme_override_fonts/font = ExtResource("5_2lysm")
-theme_override_font_sizes/font_size = 35
-text = "Where are my taonga stored?"
-autowrap_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="Control5"]
 layout_mode = 0
@@ -842,17 +831,6 @@ offset_right = -70.0
 offset_bottom = 274.0
 text = "TikTok"
 
-[node name="Back5" type="Button" parent="Control5"]
-custom_minimum_size = Vector2(20, 20)
-layout_mode = 0
-offset_left = -571.0
-offset_top = -309.0
-offset_right = -531.0
-offset_bottom = -269.0
-icon = ExtResource("7_c464j")
-flat = true
-expand_icon = true
-
 [node name="Control6" type="Control" parent="."]
 visible = false
 layout_mode = 3
@@ -981,7 +959,6 @@ scale = Vector2(1, 0.913285)
 [connection signal="pressed" from="Control5/ibtn" to="Control5" method="_on_ibtn_pressed"]
 [connection signal="pressed" from="Control5/sbtn" to="Control5" method="_on_sbtn_pressed"]
 [connection signal="pressed" from="Control5/tbtn" to="Control5" method="_on_tbtn_pressed"]
-[connection signal="pressed" from="Control5/Back5" to="." method="_on_back_5_pressed"]
 [connection signal="pressed" from="Control6/Back6" to="." method="_on_back_6_pressed"]
 [connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
 [connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer3/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
