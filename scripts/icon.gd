@@ -1,7 +1,5 @@
 extends TextureRect
 
-
-
 #Function to display elements of the array
 
 var is_selected = false
@@ -17,7 +15,7 @@ func _gui_input(event):
 func toggle_selected():
 	is_selected = not is_selected
 	if is_selected:
-		self.scale = Vector2(1.2, 1.2) # Increase size when selected
+		self.scale = Vector2(1.05, 1.05) # Increase size when selected 
 		SocialMediaVars.social_array.append(self)
 		print("Logo added")
 	else:
