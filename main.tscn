@@ -418,6 +418,7 @@ offset_top = 222.0
 offset_right = 563.0
 offset_bottom = 291.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+disabled = true
 text = "CONTINUE"
 icon = ExtResource("4_wlj0b")
 flat = true

@@ -18,6 +18,7 @@ func toggle_selected():
 		self.scale = Vector2(1.05, 1.05) # Increase size when selected 
 		SocialMediaVars.social_array.append(self)
 		print("Logo added")
+		$"../Continue3".disabled = false
 	else:
 		var index = SocialMediaVars.social_array.find(self)
 		SocialMediaVars.social_array.remove_at(index)
