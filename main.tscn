@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=36 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bvet4aowk5yh8" path="res://resources/Background/bg_pattern.png" id="2_tuvr7"]
@@ -7,11 +7,12 @@
 [ext_resource type="Texture2D" uid="uid://dbcb68j3ybv83" path="res://resources/Images/Graphics/IdleBtn_sml_light.png" id="4_wlj0b"]
 [ext_resource type="FontFile" uid="uid://hy2kgo6bcwbf" path="res://resources/Fonts/Oxanium/Oxanium-VariableFont_wght.ttf" id="5_2lysm"]
 [ext_resource type="Texture2D" uid="uid://ccvisyal8sguv" path="res://resources/Images/logos/FB_Card.png" id="6_2yo76"]
-[ext_resource type="Script" path="res://scripts/icon.gd" id="7_bl3jf"]
+[ext_resource type="Script" path="res://scripts/social_media_icon_select.gd" id="7_bl3jf"]
 [ext_resource type="Texture2D" uid="uid://72sb0cdfv073" path="res://resources/Images/Graphics/white_back_arrow.png" id="7_c464j"]
 [ext_resource type="Texture2D" uid="uid://51sn6uvxvsl0" path="res://resources/Images/logos/bg_cardsmall.png" id="7_suvgj"]
 [ext_resource type="FontFile" uid="uid://0j081jwln1lw" path="res://resources/Fonts/Bebas_Neue/BebasNeue-Regular.ttf" id="8_2d3kv"]
 [ext_resource type="Texture2D" uid="uid://c4gnl6268svar" path="res://resources/Images/logos/I_card.png" id="8_6k2d2"]
+[ext_resource type="Script" path="res://scripts/toanga_icon_select.gd" id="9_6p02j"]
 [ext_resource type="Texture2D" uid="uid://b5t6pmk5ml251" path="res://resources/Images/logos/G_card.png" id="9_luljv"]
 [ext_resource type="Texture2D" uid="uid://2xlgk2ekmxlp" path="res://resources/Images/logos/SC_card.png" id="10_wujdo"]
 [ext_resource type="Texture2D" uid="uid://dtn6f5iko1b2m" path="res://resources/Images/logos/TT_card.png" id="11_t4k18"]
@@ -23,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://c68acjij1wtwq" path="res://resources/Images/Graphics/img1.png" id="16_22v0p"]
 [ext_resource type="Script" path="res://scripts/drag_only.gd" id="17_1587p"]
 [ext_resource type="Texture2D" uid="uid://bfc4d04xqqdo5" path="res://resources/Images/FB.png" id="17_e7wty"]
+[ext_resource type="Texture2D" path="res://resources/Images/Graphics/Taonga1.png" id="18_0j6it"]
 [ext_resource type="Texture2D" uid="uid://dvrcy8d45mxh" path="res://resources/Background/TKR_Image Library-10-min.jpg" id="18_cc1eg"]
 [ext_resource type="Texture2D" uid="uid://bxngvk2st68g4" path="res://resources/Images/SnapchatLine.png" id="18_rtbc7"]
 [ext_resource type="Texture2D" uid="uid://c1aklyoudx0vh" path="res://resources/Images/Graphics/img2.png" id="18_ymvov"]
@@ -88,6 +90,7 @@ texture = ExtResource("3_hkr3r")
 expand_mode = 1
 
 [node name="Control1" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -218,15 +221,15 @@ offset_right = 26.0
 offset_bottom = -169.0
 theme_override_fonts/font = ExtResource("5_2lysm")
 theme_override_font_sizes/font_size = 35
-text = "Identify whether you would consider the following examples taonga to you"
+text = "Select what you consider is Taonga from the following"
 autowrap_mode = 2
 
 [node name="RichTextLabel8" type="Label" parent="Control2"]
 layout_mode = 0
 offset_left = -515.0
-offset_top = -181.0
+offset_top = -213.0
 offset_right = 309.0
-offset_bottom = -125.0
+offset_bottom = -157.0
 text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii ika. I te hokinga mai o ona tuakana ki tatahi, ka kii atu a Maui, “ka taea e au te haramai i to koutou na taha ki te hii ika?” "
 autowrap_mode = 2
 
@@ -244,147 +247,89 @@ icon_alignment = 1
 
 [node name="TextureRect3" type="TextureRect" parent="Control2"]
 layout_mode = 0
-offset_left = -496.0
-offset_top = -96.0
-offset_right = -267.0
-offset_bottom = 45.0
+offset_left = -307.0
+offset_top = -93.0
+offset_right = -78.0
+offset_bottom = 48.0
 texture = ExtResource("7_suvgj")
 expand_mode = 1
+script = ExtResource("9_6p02j")
 
-[node name="TextureRect8" type="TextureRect" parent="Control2"]
+[node name="RichTextLabel" type="Label" parent="Control2/TextureRect3"]
 layout_mode = 0
-offset_left = 256.0
-offset_top = -4.0
-offset_right = 485.0
-offset_bottom = 137.0
-texture = ExtResource("7_suvgj")
-expand_mode = 1
-
-[node name="TextureRect4" type="TextureRect" parent="Control2"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 72.0
-offset_right = 237.0
-offset_bottom = 213.0
-texture = ExtResource("7_suvgj")
-expand_mode = 1
+offset_left = 13.0
+offset_top = 59.0
+offset_right = 205.0
+offset_bottom = 94.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 25
+text = "Whakapapa"
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="TextureRect5" type="TextureRect" parent="Control2"]
 layout_mode = 0
-offset_left = 8.0
-offset_top = -96.0
-offset_right = 237.0
-offset_bottom = 45.0
+offset_left = 69.0
+offset_top = 83.0
+offset_right = 298.0
+offset_bottom = 224.0
 texture = ExtResource("7_suvgj")
 expand_mode = 1
+script = ExtResource("9_6p02j")
 
-[node name="TextureRect6" type="TextureRect" parent="Control2"]
+[node name="RichTextLabel2" type="Label" parent="Control2/TextureRect5"]
 layout_mode = 0
-offset_left = -238.0
-offset_top = 72.0
-offset_right = -9.0
-offset_bottom = 213.0
-texture = ExtResource("7_suvgj")
-expand_mode = 1
+offset_top = 56.0
+offset_right = 232.0
+offset_bottom = 88.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 20
+text = "My own images"
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="TextureRect7" type="TextureRect" parent="Control2"]
 layout_mode = 0
-offset_left = -496.0
-offset_top = 72.0
-offset_right = -267.0
-offset_bottom = 213.0
+offset_left = -307.0
+offset_top = 83.0
+offset_right = -78.0
+offset_bottom = 224.0
 texture = ExtResource("7_suvgj")
 expand_mode = 1
+script = ExtResource("9_6p02j")
+
+[node name="RichTextLabel4" type="Label" parent="Control2/TextureRect7"]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 232.0
+offset_bottom = 91.0
+theme_override_fonts/font = ExtResource("8_2d3kv")
+theme_override_font_sizes/font_size = 20
+text = " Marae Kawa and
+ Tikanga"
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="TextureRect12" type="TextureRect" parent="Control2"]
 layout_mode = 0
-offset_left = -238.0
-offset_top = -96.0
-offset_right = -9.0
-offset_bottom = 45.0
+offset_left = 69.0
+offset_top = -93.0
+offset_right = 298.0
+offset_bottom = 48.0
 texture = ExtResource("7_suvgj")
 expand_mode = 1
+script = ExtResource("9_6p02j")
 
-[node name="RichTextLabel" type="Label" parent="Control2"]
+[node name="RichTextLabel3" type="Label" parent="Control2/TextureRect12"]
 layout_mode = 0
-offset_left = -480.0
-offset_top = -56.0
-offset_right = -288.0
-offset_bottom = 9.0
+offset_left = -5.0
+offset_top = 51.0
+offset_right = 227.0
+offset_bottom = 106.0
 theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "Whakapapa or Whakapapa Connections"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="RichTextLabel2" type="Label" parent="Control2"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = -40.0
-offset_right = 240.0
-offset_bottom = -8.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "Images of your Marae"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="RichTextLabel3" type="Label" parent="Control2"]
-layout_mode = 0
-offset_left = -232.0
-offset_top = -40.0
-offset_bottom = -8.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "Images of your Tipuna"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="RichTextLabel4" type="Label" parent="Control2"]
-layout_mode = 0
-offset_left = -496.0
-offset_top = 128.0
-offset_right = -264.0
-offset_bottom = 160.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "Images of my Children"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="RichTextLabel5" type="Label" parent="Control2"]
-layout_mode = 0
-offset_left = -240.0
-offset_top = 128.0
-offset_right = -8.0
-offset_bottom = 160.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "Livestream Tangi"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="RichTextLabel6" type="Label" parent="Control2"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 128.0
-offset_right = 240.0
-offset_bottom = 152.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "Marae and Whānau Documents"
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="RichTextLabel7" type="Label" parent="Control2"]
-layout_mode = 0
-offset_left = 272.0
-offset_top = 24.0
-offset_right = 472.0
-offset_bottom = 102.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "Private information for example: Birthdates, Names of Children"
+theme_override_font_sizes/font_size = 22
+text = "Images of your Tipuna
+ and Uri"
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -510,7 +455,6 @@ text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii
 autowrap_mode = 2
 
 [node name="Control4" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -546,26 +490,41 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
-[node name="SocialMediaHbox" type="HBoxContainer" parent="Control4"]
+[node name="TaongaHbox1" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
-layout_mode = 0
-offset_left = -491.0
-offset_top = -245.0
-offset_right = -300.0
-offset_bottom = -207.0
+offset_left = -475.0
+offset_top = -261.0
+offset_right = -284.0
+offset_bottom = -241.0
 scale = Vector2(4.99004, 4.7252)
 theme_override_constants/separation = 6
 alignment = 1
 
-[node name="ToangaHbox" type="HBoxContainer" parent="Control4"]
+[node name="TextureRect" type="TextureRect" parent="Control4/TaongaHbox1"]
+layout_mode = 2
+texture = ExtResource("18_0j6it")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Control4/TaongaHbox1"]
+layout_mode = 2
+texture = ExtResource("18_0j6it")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Control4/TaongaHbox1"]
+layout_mode = 2
+texture = ExtResource("18_0j6it")
+expand_mode = 1
+
+[node name="SocialMediaHbox" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
 layout_mode = 0
-offset_left = -555.0
-offset_top = 171.0
-offset_right = -394.035
-offset_bottom = 184.0
+offset_left = -483.0
+offset_top = -165.0
+offset_right = -292.0
+offset_bottom = -141.0
 scale = Vector2(4.99004, 4.7252)
-theme = SubResource("Theme_hou4k")
+theme_override_constants/separation = 6
+alignment = 1
 
 [node name="ToangaHbox2" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
@@ -627,14 +586,15 @@ script = ExtResource("17_1587p")
 
 [node name="Label2" type="Label" parent="Control4"]
 layout_mode = 0
-offset_left = -523.0
-offset_top = -301.0
-offset_right = 429.0
-offset_bottom = -253.0
+offset_left = -483.0
+offset_top = -317.0
+offset_right = 469.0
+offset_bottom = -269.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_2lysm")
 theme_override_font_sizes/font_size = 35
 text = "Drag and drop the toanga to each platform you use"
+horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Control5" type="Control" parent="."]
