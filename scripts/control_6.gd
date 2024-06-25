@@ -1,12 +1,12 @@
 extends Control
 
+func _on_preventbtn_pressed():
+	OS.shell_open("https://www.dia.govt.nz/Identity---How-does-identity-theft-happen")
 
-# Called when the node enters the scene tree for the first time.
-#func _ready():
-#var button = Button.new()
-#button.text = "Open Website"
-#button.pressed.connect(_on_externalbtn_pressed)
 
-#Test accessing external websites
-func _on_externalbtn_pressed():
-	OS.shell_open("https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwizgpiJ59mGAxXx3jgGHYgEBXgQPAgJ")
+func _on_two_factorbtn_pressed():
+	OS.shell_open("https://www.cert.govt.nz/individuals/guides/two-factor-authentication/")
+
+
+func _on_personalbtn_pressed():
+	OS.shell_open("https://www.dpmc.govt.nz/our-programmes/national-security/cyber-security-strategy")

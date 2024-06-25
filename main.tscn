@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://vqmybt7ow87p"]
+[gd_scene load_steps=43 format=3 uid="uid://vqmybt7ow87p"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_8u0md"]
 [ext_resource type="Texture2D" uid="uid://bvet4aowk5yh8" path="res://resources/Background/bg_pattern.png" id="2_tuvr7"]
@@ -9,8 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://ccvisyal8sguv" path="res://resources/Images/logos/FB_Card.png" id="6_2yo76"]
 [ext_resource type="Script" path="res://scripts/social_media_icon_select.gd" id="7_bl3jf"]
 [ext_resource type="Texture2D" uid="uid://72sb0cdfv073" path="res://resources/Images/Graphics/white_back_arrow.png" id="7_c464j"]
-[ext_resource type="Texture2D" uid="uid://51sn6uvxvsl0" path="res://resources/Images/logos/bg_cardsmall.png" id="7_suvgj"]
-[ext_resource type="FontFile" uid="uid://0j081jwln1lw" path="res://resources/Fonts/Bebas_Neue/BebasNeue-Regular.ttf" id="8_2d3kv"]
 [ext_resource type="Texture2D" uid="uid://c4gnl6268svar" path="res://resources/Images/logos/I_card.png" id="8_6k2d2"]
 [ext_resource type="Script" path="res://scripts/toanga_icon_select.gd" id="9_6p02j"]
 [ext_resource type="Texture2D" uid="uid://b5t6pmk5ml251" path="res://resources/Images/logos/G_card.png" id="9_luljv"]
@@ -24,7 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://c68acjij1wtwq" path="res://resources/Images/Graphics/img1.png" id="16_22v0p"]
 [ext_resource type="Script" path="res://scripts/drag_only.gd" id="17_1587p"]
 [ext_resource type="Texture2D" uid="uid://bfc4d04xqqdo5" path="res://resources/Images/FB.png" id="17_e7wty"]
-[ext_resource type="Texture2D" path="res://resources/Images/Graphics/Taonga1.png" id="18_0j6it"]
 [ext_resource type="Texture2D" uid="uid://dvrcy8d45mxh" path="res://resources/Background/TKR_Image Library-10-min.jpg" id="18_cc1eg"]
 [ext_resource type="Texture2D" uid="uid://bxngvk2st68g4" path="res://resources/Images/SnapchatLine.png" id="18_rtbc7"]
 [ext_resource type="Texture2D" uid="uid://c1aklyoudx0vh" path="res://resources/Images/Graphics/img2.png" id="18_ymvov"]
@@ -33,7 +30,17 @@
 [ext_resource type="Texture2D" uid="uid://tjmmtkdlgimb" path="res://resources/Images/Graphics/img4.png" id="20_bt18d"]
 [ext_resource type="Texture2D" uid="uid://3yoy8lnlo6xn" path="res://resources/Images/Graphics/img5.png" id="21_sac3n"]
 [ext_resource type="Texture2D" uid="uid://brnm6nkwuaxlr" path="res://resources/Images/Graphics/img6.png" id="22_cnvg2"]
+[ext_resource type="Texture2D" uid="uid://cr6i4dro2ehr5" path="res://resources/Images/Graphics/sc2 1.png" id="25_wwoua"]
+[ext_resource type="Texture2D" uid="uid://e83efhns01aj" path="res://resources/Images/Graphics/sc2 2.png" id="26_k2nge"]
+[ext_resource type="Texture2D" uid="uid://dtkcltcfh0c6n" path="res://resources/Images/Graphics/sc2 3.png" id="27_bkee1"]
+[ext_resource type="Texture2D" uid="uid://csdgoatew0foe" path="res://resources/Images/Graphics/sc2 4.png" id="28_cxgbl"]
 [ext_resource type="Script" path="res://scripts/control_6.gd" id="30_82deq"]
+[ext_resource type="FontFile" uid="uid://bkk5tuor76oky" path="res://resources/Fonts/Oxanium/static/Oxanium-Light.ttf" id="34_orh02"]
+[ext_resource type="Texture2D" uid="uid://cvme65sh6lp2p" path="res://resources/Images/Graphics/d4470bff-1a09-488c-b6f9-ad291fabe280.jpeg" id="35_dq1ax"]
+[ext_resource type="FontFile" uid="uid://nmq4uigtnrtg" path="res://resources/Fonts/Montserrat/static/Montserrat-Medium.ttf" id="36_i5fne"]
+[ext_resource type="FontFile" uid="uid://c4ci17u3sblo4" path="res://resources/Fonts/Oxanium/static/Oxanium-Medium.ttf" id="37_yj4wd"]
+[ext_resource type="Texture2D" uid="uid://bwiih8rxwwl86" path="res://resources/Images/Graphics/pixlr-image-generator-200f5a9b-d956-4c89-a659-40093462b8c1.png" id="38_i0vqc"]
+[ext_resource type="Texture2D" uid="uid://bqi13dyne2x0d" path="res://resources/Images/Graphics/945ce830-b4bf-4835-94cc-dcb48d92ff55.jpeg" id="39_1rylv"]
 
 [sub_resource type="Theme" id="Theme_hou4k"]
 
@@ -245,27 +252,14 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
-[node name="TextureRect3" type="TextureRect" parent="Control2"]
-layout_mode = 0
+[node name="TextureRect6" type="TextureRect" parent="Control2"]
 offset_left = -307.0
 offset_top = -93.0
-offset_right = -78.0
-offset_bottom = 48.0
-texture = ExtResource("7_suvgj")
+offset_right = -75.0
+offset_bottom = 43.0
+texture = ExtResource("25_wwoua")
 expand_mode = 1
 script = ExtResource("9_6p02j")
-
-[node name="RichTextLabel" type="Label" parent="Control2/TextureRect3"]
-layout_mode = 0
-offset_left = 13.0
-offset_top = 59.0
-offset_right = 205.0
-offset_bottom = 94.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 25
-text = "Whakapapa"
-horizontal_alignment = 1
-autowrap_mode = 2
 
 [node name="TextureRect5" type="TextureRect" parent="Control2"]
 layout_mode = 0
@@ -273,20 +267,9 @@ offset_left = 69.0
 offset_top = 83.0
 offset_right = 298.0
 offset_bottom = 224.0
-texture = ExtResource("7_suvgj")
+texture = ExtResource("28_cxgbl")
 expand_mode = 1
 script = ExtResource("9_6p02j")
-
-[node name="RichTextLabel2" type="Label" parent="Control2/TextureRect5"]
-layout_mode = 0
-offset_top = 56.0
-offset_right = 232.0
-offset_bottom = 88.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = "My own images"
-horizontal_alignment = 1
-autowrap_mode = 2
 
 [node name="TextureRect7" type="TextureRect" parent="Control2"]
 layout_mode = 0
@@ -294,21 +277,9 @@ offset_left = -307.0
 offset_top = 83.0
 offset_right = -78.0
 offset_bottom = 224.0
-texture = ExtResource("7_suvgj")
+texture = ExtResource("27_bkee1")
 expand_mode = 1
 script = ExtResource("9_6p02j")
-
-[node name="RichTextLabel4" type="Label" parent="Control2/TextureRect7"]
-layout_mode = 0
-offset_top = 40.0
-offset_right = 232.0
-offset_bottom = 91.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 20
-text = " Marae Kawa and
- Tikanga"
-horizontal_alignment = 1
-autowrap_mode = 2
 
 [node name="TextureRect12" type="TextureRect" parent="Control2"]
 layout_mode = 0
@@ -316,22 +287,9 @@ offset_left = 69.0
 offset_top = -93.0
 offset_right = 298.0
 offset_bottom = 48.0
-texture = ExtResource("7_suvgj")
+texture = ExtResource("26_k2nge")
 expand_mode = 1
 script = ExtResource("9_6p02j")
-
-[node name="RichTextLabel3" type="Label" parent="Control2/TextureRect12"]
-layout_mode = 0
-offset_left = -5.0
-offset_top = 51.0
-offset_right = 227.0
-offset_bottom = 106.0
-theme_override_fonts/font = ExtResource("8_2d3kv")
-theme_override_font_sizes/font_size = 22
-text = "Images of your Tipuna
- and Uri"
-horizontal_alignment = 1
-autowrap_mode = 2
 
 [node name="Control3" type="Control" parent="."]
 visible = false
@@ -455,6 +413,7 @@ text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii
 autowrap_mode = 2
 
 [node name="Control4" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -490,38 +449,13 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
-[node name="TaongaHbox1" type="HBoxContainer" parent="Control4"]
-layout_direction = 2
-offset_left = -475.0
-offset_top = -261.0
-offset_right = -284.0
-offset_bottom = -241.0
-scale = Vector2(4.99004, 4.7252)
-theme_override_constants/separation = 6
-alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="Control4/TaongaHbox1"]
-layout_mode = 2
-texture = ExtResource("18_0j6it")
-expand_mode = 1
-
-[node name="TextureRect2" type="TextureRect" parent="Control4/TaongaHbox1"]
-layout_mode = 2
-texture = ExtResource("18_0j6it")
-expand_mode = 1
-
-[node name="TextureRect3" type="TextureRect" parent="Control4/TaongaHbox1"]
-layout_mode = 2
-texture = ExtResource("18_0j6it")
-expand_mode = 1
-
 [node name="SocialMediaHbox" type="HBoxContainer" parent="Control4"]
 layout_direction = 2
 layout_mode = 0
 offset_left = -483.0
-offset_top = -165.0
+offset_top = -173.0
 offset_right = -292.0
-offset_bottom = -141.0
+offset_bottom = -149.0
 scale = Vector2(4.99004, 4.7252)
 theme_override_constants/separation = 6
 alignment = 1
@@ -531,7 +465,7 @@ layout_direction = 2
 layout_mode = 0
 offset_left = -555.0
 offset_top = 243.0
-offset_right = -394.035
+offset_right = -379.0
 offset_bottom = 256.0
 scale = Vector2(4.99004, 4.7252)
 theme = SubResource("Theme_hou4k")
@@ -592,10 +526,20 @@ offset_right = 469.0
 offset_bottom = -269.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_2lysm")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 28
 text = "Drag and drop the toanga to each platform you use"
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="ToangaHbox3" type="HBoxContainer" parent="Control4"]
+layout_direction = 2
+offset_left = -435.0
+offset_top = -285.0
+offset_right = -259.0
+offset_bottom = -269.0
+scale = Vector2(4.99004, 4.7252)
+theme_override_constants/separation = 17
+alignment = 1
 
 [node name="Control5" type="Control" parent="."]
 visible = false
@@ -792,8 +736,111 @@ offset_right = -70.0
 offset_bottom = 274.0
 text = "TikTok"
 
-[node name="Control6" type="Control" parent="."]
+[node name="Control7" type="Control" parent="."]
 visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("30_82deq")
+metadata/_edit_use_anchors_ = true
+
+[node name="Back6" type="Button" parent="Control7"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 0
+offset_left = -579.0
+offset_top = -309.0
+offset_right = -539.0
+offset_bottom = -269.0
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0.776471)
+icon = ExtResource("7_c464j")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="Control7"]
+layout_mode = 1
+offset_left = -531.0
+offset_top = -304.0
+offset_right = 45.0
+offset_bottom = -245.0
+theme_override_fonts/font = ExtResource("5_2lysm")
+theme_override_font_sizes/font_size = 35
+text = "Resources to protect your data"
+autowrap_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control7"]
+layout_mode = 0
+offset_left = -531.0
+offset_top = -205.0
+offset_right = 490.0
+offset_bottom = 240.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control7/ScrollContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control7/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "VISIT WEBSITE"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Control7/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "VISIT WEBSITE"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control7/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "VISIT WEBSITE"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Control7/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
+"
+autowrap_mode = 2
+
+[node name="externalbtn" type="Button" parent="Control7/ScrollContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "VISIT WEBSITE"
+
+[node name="Control6" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -819,87 +866,156 @@ expand_icon = true
 
 [node name="Label" type="Label" parent="Control6"]
 layout_mode = 1
-offset_left = -531.0
-offset_top = -304.0
-offset_right = 45.0
-offset_bottom = -245.0
+offset_left = -283.0
+offset_top = -317.0
+offset_right = 293.0
+offset_bottom = -258.0
 theme_override_fonts/font = ExtResource("5_2lysm")
 theme_override_font_sizes/font_size = 35
 text = "Resources to protect your data"
+horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Control6"]
+[node name="Label2" type="Label" parent="Control6"]
+offset_left = -275.0
+offset_top = -269.0
+offset_right = 301.0
+offset_bottom = -210.0
+theme_override_fonts/font = ExtResource("34_orh02")
+theme_override_font_sizes/font_size = 18
+text = "To protect your Taonga we recommend that you consider taking these precautions to secure your data"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control6"]
+custom_minimum_size = Vector2(130, 160)
 layout_mode = 0
-offset_left = -523.0
-offset_top = -221.0
-offset_right = 498.0
-offset_bottom = 224.0
-horizontal_scroll_mode = 0
-vertical_scroll_mode = 2
+offset_left = 325.0
+offset_top = -165.0
+offset_right = 445.0
+offset_bottom = -5.0
+texture = ExtResource("35_dq1ax")
+expand_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control6/ScrollContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Control6/ScrollContainer/VBoxContainer"]
-layout_mode = 2
-text = "test"
-uppercase = true
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(500, 0)
-layout_mode = 2
-text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
-"
+[node name="Label3" type="Label" parent="Control6"]
+offset_left = 213.0
+offset_top = 43.0
+offset_right = 565.0
+offset_bottom = 160.0
+theme_override_fonts/font = ExtResource("36_i5fne")
+theme_override_font_sizes/font_size = 14
+text = "Identify the risks associated with sharing data. Personal information can be misused for identity theft, fraud, and privacy invasions. Before sharing, consider the potential consequences to safeguard your information and privacy."
+horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "VISIT WEBSITE"
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(500, 0)
-layout_mode = 2
-text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
-"
+[node name="Label4" type="Label" parent="Control6"]
+offset_left = 117.0
+offset_top = 11.0
+offset_right = 669.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("37_yj4wd")
+theme_override_font_sizes/font_size = 23
+text = "Prevent Oversharing Data"
+horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer3"]
-layout_mode = 2
-text = "VISIT WEBSITE"
+[node name="TextureRect2" type="TextureRect" parent="Control6"]
+custom_minimum_size = Vector2(130, 160)
+offset_left = -59.0
+offset_top = -165.0
+offset_right = 61.0
+offset_bottom = -5.0
+texture = ExtResource("38_i0vqc")
+expand_mode = 1
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(500, 0)
-layout_mode = 2
-text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
-"
+[node name="Label5" type="Label" parent="Control6"]
+offset_left = -171.0
+offset_top = 43.0
+offset_right = 181.0
+offset_bottom = 160.0
+theme_override_fonts/font = ExtResource("36_i5fne")
+theme_override_font_sizes/font_size = 14
+text = "Two-factor authentication (2FA) boosts security by requiring your password and a second verification step, like a code from your phone. Enable 2FA to protect your online accounts."
+horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-text = "VISIT WEBSITE"
-
-[node name="HBoxContainer4" type="HBoxContainer" parent="Control6/ScrollContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label3" type="Label" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(500, 0)
-layout_mode = 2
-text = "I tētahi ahiahi, e whakareri ana a Māui me ōna tuākana i tētahi hāngi, hai hākari mā rātau. Kātahi anō ka mutu ake te whakawera i ngā kōhatu, ka tō te rā, ka pōuri rawa mō rātau. Ka hōhā a Māui ki te kai i ana kai i roto i te pōuri, ka tū a ia ki te mura o te ahi, ka kōrero atu ki tōna iwi.
-"
+[node name="Label6" type="Label" parent="Control6"]
+offset_left = -267.0
+offset_top = 11.0
+offset_right = 285.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("37_yj4wd")
+theme_override_font_sizes/font_size = 23
+text = "Two factor Authentication"
+horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="externalbtn" type="Button" parent="Control6/ScrollContainer/VBoxContainer/HBoxContainer4"]
-layout_mode = 2
-text = "VISIT WEBSITE"
+[node name="TextureRect3" type="TextureRect" parent="Control6"]
+custom_minimum_size = Vector2(130, 160)
+offset_left = -443.0
+offset_top = -165.0
+offset_right = -323.0
+offset_bottom = -5.0
+texture = ExtResource("39_1rylv")
+expand_mode = 1
+
+[node name="Label7" type="Label" parent="Control6"]
+offset_left = -555.0
+offset_top = 43.0
+offset_right = -203.0
+offset_bottom = 160.0
+theme_override_fonts/font = ExtResource("36_i5fne")
+theme_override_font_sizes/font_size = 13
+text = "Create strong passwords, avoid oversharing on social media, use free Wi-Fi cautiously, and be wary of links and attachments. Restrict mobile app permissions to protect your data. Be aware of your digital footprint and maintain good cybersecurity practices."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label8" type="Label" parent="Control6"]
+offset_left = -651.0
+offset_top = 10.0
+offset_right = -99.0
+offset_bottom = 50.0
+theme_override_fonts/font = ExtResource("37_yj4wd")
+theme_override_font_sizes/font_size = 23
+text = "Whanau security strategy"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TwoFactorbtn" type="Button" parent="Control6"]
+offset_left = -99.0
+offset_top = 171.0
+offset_right = 99.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(0.952057, 0.623448, 0.402419, 1)
+text = "Two factor Auth"
+icon = ExtResource("4_wlj0b")
+flat = true
+icon_alignment = 1
+
+[node name="Preventbtn" type="Button" parent="Control6"]
+offset_left = 285.0
+offset_top = 171.0
+offset_right = 483.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(0, 0.760121, 0.6545, 1)
+text = "Prevent oversharing"
+icon = ExtResource("4_wlj0b")
+flat = true
+icon_alignment = 1
+
+[node name="Personalbtn" type="Button" parent="Control6"]
+offset_left = -483.0
+offset_top = 171.0
+offset_right = -285.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.145098, 0, 1)
+text = "Personal strategy"
+icon = ExtResource("4_wlj0b")
+flat = true
+icon_alignment = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
@@ -910,6 +1026,7 @@ scale = Vector2(1, 0.913285)
 [connection signal="pressed" from="Control2/Continue2" to="." method="_on_continue_2_pressed"]
 [connection signal="pressed" from="Control3/Back3" to="." method="_on_back_3_pressed"]
 [connection signal="pressed" from="Control3/Continue3" to="." method="_on_continue_3_pressed"]
+[connection signal="gui_input" from="Control3/Facebook" to="Control3/Facebook" method="_on_gui_input"]
 [connection signal="visibility_changed" from="Control4" to="Control4" method="_on_visibility_changed"]
 [connection signal="pressed" from="Control4/Back4" to="." method="_on_back_4_pressed"]
 [connection signal="pressed" from="Control4/Continue4" to="." method="_on_continue_4_pressed"]
@@ -920,8 +1037,12 @@ scale = Vector2(1, 0.913285)
 [connection signal="pressed" from="Control5/ibtn" to="Control5" method="_on_ibtn_pressed"]
 [connection signal="pressed" from="Control5/sbtn" to="Control5" method="_on_sbtn_pressed"]
 [connection signal="pressed" from="Control5/tbtn" to="Control5" method="_on_tbtn_pressed"]
+[connection signal="pressed" from="Control7/Back6" to="." method="_on_back_6_pressed"]
+[connection signal="pressed" from="Control7/ScrollContainer/VBoxContainer/HBoxContainer/externalbtn" to="Control7" method="_on_externalbtn_pressed"]
+[connection signal="pressed" from="Control7/ScrollContainer/VBoxContainer/HBoxContainer3/externalbtn" to="Control7" method="_on_externalbtn_pressed"]
+[connection signal="pressed" from="Control7/ScrollContainer/VBoxContainer/HBoxContainer2/externalbtn" to="Control7" method="_on_externalbtn_pressed"]
+[connection signal="pressed" from="Control7/ScrollContainer/VBoxContainer/HBoxContainer4/externalbtn" to="Control7" method="_on_externalbtn_pressed"]
 [connection signal="pressed" from="Control6/Back6" to="." method="_on_back_6_pressed"]
-[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
-[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer3/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
-[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer2/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
-[connection signal="pressed" from="Control6/ScrollContainer/VBoxContainer/HBoxContainer4/externalbtn" to="Control6" method="_on_externalbtn_pressed"]
+[connection signal="pressed" from="Control6/TwoFactorbtn" to="Control6" method="_on_two_factorbtn_pressed"]
+[connection signal="pressed" from="Control6/Preventbtn" to="Control6" method="_on_preventbtn_pressed"]
+[connection signal="pressed" from="Control6/Personalbtn" to="Control6" method="_on_personalbtn_pressed"]

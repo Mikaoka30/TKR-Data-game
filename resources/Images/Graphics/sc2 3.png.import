@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://phqgp3hlqdhu"
-path="res://.godot/imported/Taonga4.png-590607fd90747b829a4298f904b9edea.ctex"
+uid="uid://dtkcltcfh0c6n"
+path="res://.godot/imported/sc2 3.png-bcf4b8344d547846cc09949bcabcf939.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Images/Graphics/Taonga4.png"
-dest_files=["res://.godot/imported/Taonga4.png-590607fd90747b829a4298f904b9edea.ctex"]
+source_file="res://resources/Images/Graphics/sc2 3.png"
+dest_files=["res://.godot/imported/sc2 3.png-bcf4b8344d547846cc09949bcabcf939.ctex"]
 
 [params]
 

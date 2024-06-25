@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ie1slxcbnedw"
-path="res://.godot/imported/Taonga1.png-d63ae845a44d59f4107decfdb0d85174.ctex"
+uid="uid://bl0ivqnek6dw3"
+path="res://.godot/imported/SquareCard.png-d9dc8bdb45380dbdc1ceab6495f1c402.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Images/Graphics/Taonga1.png"
-dest_files=["res://.godot/imported/Taonga1.png-d63ae845a44d59f4107decfdb0d85174.ctex"]
+source_file="res://resources/Images/Graphics/SquareCard.png"
+dest_files=["res://.godot/imported/SquareCard.png-d9dc8bdb45380dbdc1ceab6495f1c402.ctex"]
 
 [params]
 
