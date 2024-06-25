@@ -97,7 +97,6 @@ texture = ExtResource("3_hkr3r")
 expand_mode = 1
 
 [node name="Control1" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -841,6 +840,7 @@ layout_mode = 2
 text = "VISIT WEBSITE"
 
 [node name="Control6" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
