@@ -21,6 +21,6 @@ func toggle_selected():
 		$"../Continue2".disabled = false
 	else:
 		var index = SocialMediaVars.taonga_array.find(self)
-		SocialMediaVars.toanga_array.remove_at(index)
+		SocialMediaVars.taonga_array.remove_at(index)
 		print("Taonga removed")
 		self.scale = Vector2(1, 1) # Reset to normal size when unselected
