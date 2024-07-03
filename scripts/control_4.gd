@@ -4,12 +4,15 @@ func _on_visibility_changed():
 
 	# Get the TextureArray from the global script
 	var social_media_hbox = $SocialMediaHbox
+	var taonga_hbox = $ToangaHbox3
 	var dropArea = preload("res://DropArea.tscn")
 	
 	#This is to fix duplication bug when going back to this page from another page
+	for toanga in taonga_hbox.get_children():
+		taonga_hbox.remove_child(toanga)
+	
 	for social_media in social_media_hbox.get_children():
 		social_media_hbox.remove_child(social_media)
-	
 	#Add taonga array to the top hbox
 	for texture in SocialMediaVars.taonga_array:
 		var textureRect = TextureRect.new()
@@ -19,7 +22,7 @@ func _on_visibility_changed():
 		
 		textureRect.custom_minimum_size = Vector2(30,18)
 		
-		var taonga_hbox = $ToangaHbox3
+
 		taonga_hbox.add_child(textureRect)
 		
 	#Add social media to top hbox and create a vbox for each one
