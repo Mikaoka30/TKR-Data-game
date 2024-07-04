@@ -1040,6 +1040,8 @@ icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
 
+[node name="Camera2D" type="Camera2D" parent="."]
+
 [connection signal="pressed" from="Control1/Continue1" to="." method="_on_continue_1_pressed"]
 [connection signal="pressed" from="Control2/Back2" to="." method="_on_back_2_pressed"]
 [connection signal="pressed" from="Control2/Continue2" to="." method="_on_continue_2_pressed"]
