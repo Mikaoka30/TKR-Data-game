@@ -45,7 +45,7 @@
 [sub_resource type="Theme" id="Theme_hou4k"]
 
 [node name="Main" type="Node2D"]
-position = Vector2(592, 312)
+position = Vector2(1008, 552)
 script = ExtResource("1_8u0md")
 
 [node name="ColorRect" type="ColorRect" parent="."]
