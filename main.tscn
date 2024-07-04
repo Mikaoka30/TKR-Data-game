@@ -45,7 +45,7 @@
 [sub_resource type="Theme" id="Theme_hou4k"]
 
 [node name="Main" type="Node2D"]
-position = Vector2(1032, 576)
+position = Vector2(1024, 520)
 script = ExtResource("1_8u0md")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -103,7 +103,6 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Control1" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 metadata/_edit_use_anchors_ = true
@@ -405,6 +404,7 @@ text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii
 autowrap_mode = 2
 
 [node name="Control4" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 size_flags_horizontal = 4
