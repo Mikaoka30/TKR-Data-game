@@ -103,6 +103,7 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Control1" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 metadata/_edit_use_anchors_ = true
@@ -289,7 +290,6 @@ expand_mode = 1
 script = ExtResource("9_6p02j")
 
 [node name="Control3" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 metadata/_edit_use_anchors_ = true
@@ -990,8 +990,6 @@ text = "Personal strategy"
 icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="pressed" from="Control1/Continue1" to="." method="_on_continue_1_pressed"]
 [connection signal="pressed" from="Control2/Back2" to="." method="_on_back_2_pressed"]

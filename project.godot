@@ -23,7 +23,6 @@ SocialMediaVars="*res://global/social_media_vars.gd"
 
 window/size/viewport_width=1460
 window/size/viewport_height=1000
-window/size/mode=3
 
 [dotnet]
 
