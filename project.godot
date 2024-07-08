@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="FirstGame"
+config/name="TKR Data Game"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://resources/Images/icon.svg"
+config/icon="res://resources/Images/bg_trans.png"
 
 [autoload]
 

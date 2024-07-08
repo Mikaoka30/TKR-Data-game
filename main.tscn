@@ -45,10 +45,11 @@
 [sub_resource type="Theme" id="Theme_hou4k"]
 
 [node name="Main" type="Node2D"]
-position = Vector2(1024, 520)
+position = Vector2(1024, 440)
 script = ExtResource("1_8u0md")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(2300, 1464)
 offset_left = -1072.0
 offset_top = -632.0
 offset_right = 1072.0
@@ -59,8 +60,8 @@ metadata/_edit_use_anchors_ = true
 [node name="Trans_BG" type="TextureRect" parent="."]
 offset_left = -1072.0
 offset_top = -640.0
-offset_right = 1064.0
-offset_bottom = 664.0
+offset_right = 1228.0
+offset_bottom = 824.0
 texture = ExtResource("2_tuvr7")
 metadata/_edit_use_anchors_ = true
 
@@ -193,6 +194,7 @@ offset_bottom = -269.0
 icon = ExtResource("7_c464j")
 flat = true
 expand_icon = true
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect10" type="TextureRect" parent="Control2"]
 visible = false
@@ -226,6 +228,7 @@ theme_override_fonts/font = ExtResource("5_2lysm")
 theme_override_font_sizes/font_size = 35
 text = "Select what you consider is Taonga from the following"
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel8" type="Label" parent="Control2"]
 layout_mode = 0
@@ -235,6 +238,7 @@ offset_right = 309.0
 offset_bottom = -157.0
 text = "Ko te moemoea a Maui kia haere ngatahi ai ratou ko ona tuakana ki te hii ika. I te hokinga mai o ona tuakana ki tatahi, ka kii atu a Maui, “ka taea e au te haramai i to koutou na taha ki te hii ika?” "
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Continue2" type="Button" parent="Control2"]
 layout_mode = 0
@@ -247,6 +251,7 @@ text = "CONTINUE"
 icon = ExtResource("4_wlj0b")
 flat = true
 icon_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect6" type="TextureRect" parent="Control2"]
 layout_mode = 0
@@ -257,6 +262,7 @@ offset_bottom = 43.0
 texture = ExtResource("25_wwoua")
 expand_mode = 1
 script = ExtResource("9_6p02j")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect5" type="TextureRect" parent="Control2"]
 layout_mode = 0
@@ -267,6 +273,7 @@ offset_bottom = 224.0
 texture = ExtResource("28_cxgbl")
 expand_mode = 1
 script = ExtResource("9_6p02j")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect7" type="TextureRect" parent="Control2"]
 layout_mode = 0
@@ -277,6 +284,7 @@ offset_bottom = 224.0
 texture = ExtResource("27_bkee1")
 expand_mode = 1
 script = ExtResource("9_6p02j")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect12" type="TextureRect" parent="Control2"]
 layout_mode = 0
@@ -287,6 +295,7 @@ offset_bottom = 48.0
 texture = ExtResource("26_k2nge")
 expand_mode = 1
 script = ExtResource("9_6p02j")
+metadata/_edit_use_anchors_ = true
 
 [node name="Control3" type="Control" parent="."]
 visible = false
